@@ -20,7 +20,7 @@ paginate: 5
 paginate_path: "/blog/page:num"
 excerpt_separator: <!--more-->
 default_bg: sitebg.jpg
-default_logo: sitelogo.jpg
+default_logo: sitelogo.jpg?v2
 safe: false
 #timezone:    America/Chicago
 future:      true
