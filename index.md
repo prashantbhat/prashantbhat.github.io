@@ -5,6 +5,8 @@ title: Home
 description: "Prashant Bhat's blog..."
 ---
 
+Welcome to my personal website and blog on Accounting, Programming and other interests. **[Read more...]({{ site.url }}/about)**
+
 <div class="posts">
   {% for post in site.categories.featured limit:2 %}
   <div class="post">
