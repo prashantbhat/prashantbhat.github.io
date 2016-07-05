@@ -9,7 +9,7 @@ tag:
 
 Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
 <br/><br/>
-So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience. You can contact me on [Twitter](https://twitter.com/prashantbhat) or by [creating issues](https://github.com/prashantbhat/prashantbhat.github.io/issues/new) on GitHub.
+So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience. You can contact me on [Google+](https://plus.google.com/+PrashantBhatMR) or by [creating issues](https://github.com/prashantbhat/prashantbhat.github.io/issues/new) on GitHub.
 
 <!--more-->
 
@@ -46,4 +46,4 @@ Many have shared their experience and reasons for moving to GitHib Pages, below 
 
 Documenting any idea properly, requires much greater analysis and logically well organized presentation. A persistent effort is needed and more time should be allocated as well. I understand it to be a difficult task but still hope to put efforts and make it a regular practice.
 
- I appreciate your [feedback](https://twitter.com/prashantbhat) on any of these posts.
+ I appreciate your [feedback](https://plus.google.com/+PrashantBhatMR) on any of these posts.

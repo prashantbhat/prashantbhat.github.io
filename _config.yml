@@ -20,7 +20,7 @@ paginate: 5
 paginate_path: "/blog/page:num"
 excerpt_separator: <!--more-->
 default_bg: sitebg.jpg
-default_logo: sitelogo.jpg?v2
+default_logo: sitelogo.jpg?4362984378
 safe: false
 #timezone:    America/Chicago
 future:      true
@@ -58,7 +58,7 @@ owner:
   #instagram:
   #flickr:
   #tumblr:
-  #google_plus:    https://plus.google.com/+foo
+  google_plus:    https://plus.google.com/+PrashantBhatMR
   # orcid and google scholar IDs are different than standard username.
   #orcid: xyz123abc
   #gscholar: xyz123abc
