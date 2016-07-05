@@ -53,6 +53,6 @@ So in this blog while documenting accounting features, I'll also explore and def
 ### Summary
 Maintaining a formal accounting practice is very important not only for businesses but also for individual professionals. Although there are some issues in implementing such a process, benefits of this process outweighs the effort or cost involved.
 
-A good accounting system is necessary to record financial transactions and it also provides different reports for performance analysis. It is also important to standardize processes, by defining SOPs to streamline all regular activities. So in this blog, I'll document features of an accounting solution, based on my experience in building and using such a system.
+A good accounting system is necessary to record and analyze financial transactions. It is also important to standardize processes, by defining SOPs to streamline all regular activities. In this blog, I'll document features of an accounting solution, based on my experience in building and using such a system.
 
 Post your comments [here](https://plus.google.com/+PrashantBhatMR/posts/9zApLeBxGvG)
