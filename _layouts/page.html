@@ -17,5 +17,4 @@ layout: default
   {% include printmsgpages.html %}
 {% endunless %}
 
-<div class="page-break"></div>
-{% if site.disqus_shortname and page.comments == true %}<div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
+{% if site.disqus_shortname and page.comments == true %}<div class="page-break"></div><div id="disqus_thread"></div><!-- /#disqus_thread -->{% endif %}
