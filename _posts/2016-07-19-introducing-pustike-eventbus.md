@@ -17,9 +17,9 @@ Pustike EventBus is an effort to extract only the event bus library from Guava p
 
  * Typed Events supporting event type specific subscribers
  * Error handling using ExceptionEvents
- * WeekReference to target subscribers
+ * WeakReference to target subscribers
  * Unregistering a not-registered subscriber doesn't throw exception
- * Only ~20k in size and has no additional dependencies
+ * Only ~20kB in size and has no additional dependencies
  * Java 8 as the min requirement (Guava supports Java 6 onwards)
 
 The project is available on [GitHub](https://github.com/pustike/pustike-eventbus).
@@ -93,7 +93,7 @@ bus.unregister(listener);
     }
 {% endhighlight %}
 
-* **ExceptionEvent**: When any exceptions occur on the bus during handler execution, this event will be published. This useful for logging and should be handled by the application. It provides access to the listener object, subscriber method, the event posted and the original exception that caused this event to be published. This can be handled similar to any other event as:
+* **ExceptionEvent**: When any exceptions occur on the bus during handler execution, this event will be published. This is useful for logging and should be handled by the application. It provides access to the listener object, subscriber method, the event posted and the original exception that caused this event to be published. This can be handled similar to any other event as:
 {% highlight java %}
     @Subscribe
     public void onException(ExceptionEvent exceptionEvent) {
