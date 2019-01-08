@@ -24,7 +24,7 @@ tags:
 
 Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
 
-So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience. You can contact me on [Google+](https://plus.google.com/+PrashantBhatMR) or by [creating issues](https://github.com/prashantbhat/prashantbhat.github.io/issues/new) on GitHub.
+So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience. You can contact me on [GitHub](https://github.com/prashantbhat/prashantbhat.github.io/issues/new).
 
 ### Blog on Accounting, Programming and other interests.
 
