@@ -1,0 +1,12 @@
+<nav class="pagination is-centered has-small-margin" role="navigation" aria-label="pagination">
+  {{if .Paginator.HasPrev }}
+  <a class="pagination-previous has-text-link" href="{{ .Paginator.Prev.URL }}">Previous</a>
+  {{ end }}
+
+  {{ if .Paginator.HasNext }}
+  <a class="pagination-next has-text-link" href="{{ .Paginator.Next.URL }}">Next</a>
+  {{ end }}
+  <ul class="pagination-list">
+    <li><p class="pagination-link">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</p></li>
+  </ul>
+</nav>

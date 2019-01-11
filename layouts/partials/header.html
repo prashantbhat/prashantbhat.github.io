@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="/js/fontawesome.min.js"></script>
+    <script src="/js/website-icons.min.js"></script>
+    <script src="/js/bulma.js"></script>
+    <title>{{ .Site.Title }}</title>
+  </head>
+
+  <body class="has-navbar-fixed-top has-small-margin">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+      {{ partial "navbar.html" . }}
+    </nav>
+    <div class="container">

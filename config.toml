@@ -1,0 +1,13 @@
+baseurl = "/" # Controls base URL
+title = "Prashant Bhat's Website" # Homepage title and page title suffix
+languageCode = "en-us"
+enableRobotsTXT = true # Suggested, it generates a robots.txt
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+paginate = 5 # Number of posts to show before paginating
+
+[params]
+    description = "Personal website of Prashant Bhat"
+    githubUsername = "prashantbhat"
+
+[author]
+    name = "Prashant Bhat"

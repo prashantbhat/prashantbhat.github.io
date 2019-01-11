@@ -1,0 +1,61 @@
+{{ partial "header.html" . }}
+
+<div class="content has-text-justified">
+  {{.Content}}
+</div>
+
+<div>
+  <p class="label">Projects:</p>
+  <p>
+    All applications/projects, that I have developed or worked on, make use of <strong>open source</strong> libraries
+    extensively. So, following are some of the libraries I'm contributing back to the community.
+    View <a href="/projects">all projects here.</a>
+  </p>
+  <br/>
+  <div class="columns is-paddingless">
+    <div class="column">
+      <div class="card">
+        <header class="card-header has-background-white-ter">
+          <p class="card-header-title"><a href="/projects/pustike-inject">Pustike Inject</a></p>
+        </header>
+        <div class="card-content">
+          Implementation of JSR-330: Dependency Injection for Java.
+        </div>
+        <div class="card-image">
+          <figure class="image">
+            <a href="/projects/pustike-inject">
+              <img src="/images/projects/pustike-inject.png" width="760" height="200">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <header class="card-header has-background-white-ter">
+          <p class="card-header-title"><a href="/projects/pustike-eventbus">Pustike EventBus</a></p>
+        </header>
+        <div class="card-content">
+          Event Bus based on publish-subscribe pattern.
+        </div>
+        <div class="card-image">
+          <figure class="image">
+            <a href="/projects/pustike-eventbus">
+              <img src="/images/projects/pustike-eventbus.png" width="760" height="200">
+            </a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<div>
+  <p class="label">Recent Blog posts:</p>
+  <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
+  {{ range first 4 (where .Pages "Section" "blog") }}
+    {{ .Render "li"}}
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
