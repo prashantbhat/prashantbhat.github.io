@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Prashant Bhat">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="/js/fontawesome.min.js"></script>
+    <script src="/js/website-icons.min.js"></script>
+    <script src="/js/bulma.js"></script>
+    <title>Prashant Bhat&#39;s Website</title>
+  </head>
+
+  <body class="has-navbar-fixed-top has-small-margin">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+            
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="/images/pb-logo-navbar.png" width="28" height="28">
+          </a>
+          <a class="navbar-item is-paddingless" href="/">
+            <strong class="is-size-4 has-text-link">Prashant Bhat</strong>
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"></a>
+            <a class="navbar-item" href="/projects">Projects</a>
+            <a class="navbar-item" href="/blog">Blog</a>
+            <a class="navbar-item" href="/about">About</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </nav>
+    <div class="container">
+
+
+<div>
+  <div class="content has-text-justified">
+    
+
+<h2 id="pustike-inject-maven-central-img-maven-central-javadocs-img-javadocs-license-img-license">Pustike Inject    <a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-inject"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-inject/badge.svg" alt="" /></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-inject"><img src="https://javadoc.io/badge/io.github.pustike/pustike-inject.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></h2>
+
+<p><a href="https://github.com/pustike/pustike-inject">Pustike Inject</a> is a simple dependency injection framework that implements the <a href="https://javax-inject.github.io/javax-inject">JSR-330</a> specification.</p>
+
+<p>Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to defines bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</p>
+
+<p><img src="/images/projects/pustike-inject.png" width="760" height="200"> <!--align="right"--></p>
+
+<p>Following are some key features of this library:</p>
+
+<ul>
+<li>Programmatic configuration in plain Java using EDSL similar to that of <a href="https://google.github.io/guice/api-docs/latest/javadoc/com/google/inject/Binder.html">Guice Binder</a>.</li>
+<li>Field, Method and Constructor injections that can be Named or Annotated specifically</li>
+<li>Default Scopes: Prototype, Lazy Singleton and Eager Singleton</li>
+<li>Support for custom scopes: Thread Local Scope and HTTP Session Scope</li>
+<li>MultiBinder support to bind multiple values as List/Collection</li>
+<li>Hierarchical Injector support</li>
+<li>Optional dependencies using <code>@Nullable</code> or <code>Optional&lt;T&gt;</code></li>
+<li>BindingListener: useful for performing further configurations</li>
+<li>Events to allow publish-subscribe style communication between components</li>
+<li>Only ~60kB in size and no external dependencies</li>
+<li>It requires Java 11 or higher.</li>
+</ul>
+
+<p><strong>Documentation:</strong></p>
+
+<ul>
+<li>User&rsquo;s Guide is included in the project&rsquo;s <a href="https://github.com/pustike/pustike-inject#injector">README.md</a> file.</li>
+<li>Latest API docs are accessible <a href="https://pustike.github.io/pustike-inject/docs/latest/api/">here</a>.</li>
+</ul>
+
+<p><strong>Latest Release:</strong> The most recent release is v1.5.0 (2018-09-28).</p>
+
+<p>To add a dependency using Maven, use the following:</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
+    &lt;artifactId&gt;pustike-inject&lt;/artifactId&gt;
+    &lt;version&gt;1.5.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>To add a dependency using Gradle:</p>
+
+<pre><code>dependencies {
+    compile 'io.github.pustike:pustike-inject:1.5.0'
+}
+</code></pre>
+
+<p>Or, download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-inject&amp;v=LATEST">latest JAR</a></p>
+
+<p><strong>License:</strong>
+This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
+
+  </div>
+</div>
+
+    </div>
+    <footer class="footer is-paddingless">
+      <div>
+        <br/>
+        <p class="buttons is-centered">
+          <a class="button" href="https://github.com/prashantbhat/prashantbhat.github.io" target="_blank" title="Code repository">
+            <span class="icon is-small"><i class="fab fa-github"></i></span>
+          </a>
+          <a class="button" href="https://twitter.com/prashantbhat" target="_blank" title="Follow me @prashantbhat">
+            <span class="icon is-small has-text-info"><i class="fab fa-twitter"></i></span>
+          </a>
+          <a class="button" href="/blog/index.xml" title="Subscribe to RSS">
+            <span class="icon is-small has-text-danger"><i class="fas fa-rss"></i></span>
+          </a>
+        </p>
+        <p class="has-text-centered">Copyright 2016-2019 &copy; Prashant Bhat.<br/>
+          The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+        <br/>
+      </div>
+    </footer>
+  </body>
+</html>

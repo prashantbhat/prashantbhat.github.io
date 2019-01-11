@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Prashant Bhat">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="/js/fontawesome.min.js"></script>
+    <script src="/js/website-icons.min.js"></script>
+    <script src="/js/bulma.js"></script>
+    <title>Prashant Bhat&#39;s Website</title>
+  </head>
+
+  <body class="has-navbar-fixed-top has-small-margin">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+            
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="/images/pb-logo-navbar.png" width="28" height="28">
+          </a>
+          <a class="navbar-item is-paddingless" href="/">
+            <strong class="is-size-4 has-text-link">Prashant Bhat</strong>
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"></a>
+            <a class="navbar-item" href="/projects">Projects</a>
+            <a class="navbar-item" href="/blog">Blog</a>
+            <a class="navbar-item" href="/about">About</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </nav>
+    <div class="container">
+
+
+<div>
+  <div class="content has-text-justified">
+    
+
+<h2 id="pustike-maven-parent-maven-central-img-maven-central-license-img-license">Pustike Maven Parent     <a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent/badge.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></h2>
+
+<p>This project contains common <a href="https://maven.apache.org">Maven</a> configuration for Pustike projects and is published as a <a href="https://github.com/pustike/pustike-maven-parent">GitHub Project</a> under Apache License.</p>
+
+<p><strong>Usage:</strong></p>
+
+<p>Include it in the parent section of pom.xml, as shown here:</p>
+
+<pre><code class="language-xml">&lt;parent&gt;
+    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
+    &lt;artifactId&gt;pustike-maven-parent&lt;/artifactId&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+&lt;/parent&gt;
+</code></pre>
+
+<p><strong>Properties:</strong></p>
+
+<ul>
+<li>Project&rsquo;s source encoding is set to: <code>UTF-8</code></li>
+<li>Compiler&rsquo;s source and target are set to Java version: <code>11</code></li>
+</ul>
+
+<p><strong>Dependencies:</strong></p>
+
+<p>Test dependencies for <a href="https://junit.org/junit5">JUnit 5</a> are included.</p>
+
+<table>
+<thead>
+<tr>
+<th>Group Id</th>
+<th>Artifact Id</th>
+<th>Version</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>org.junit.jupiter</td>
+<td>junit-jupiter-api</td>
+<td>5.3.2</td>
+</tr>
+
+<tr>
+<td>org.junit.jupiter</td>
+<td>junit-jupiter-engine</td>
+<td>5.3.2</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Build Plugins:</strong></p>
+
+<p>Following maven build plugins are defined from the groupId: <code>org.apache.maven.plugins</code></p>
+
+<table>
+<thead>
+<tr>
+<th>Artifact Id</th>
+<th>Version</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>maven-compiler-plugin</td>
+<td>3.8.0</td>
+</tr>
+
+<tr>
+<td>maven-jar-plugin</td>
+<td>3.1.1</td>
+</tr>
+
+<tr>
+<td>maven-javadoc-plugin</td>
+<td>3.0.1</td>
+</tr>
+
+<tr>
+<td>maven-resources-plugin</td>
+<td>3.1.0</td>
+</tr>
+
+<tr>
+<td>maven-surefire-plugin</td>
+<td>3.0.0-M3</td>
+</tr>
+
+<tr>
+<td>maven-site-plugin</td>
+<td>3.7.1</td>
+</tr>
+
+<tr>
+<td>maven-deploy-plugin</td>
+<td>3.0.0-M1</td>
+</tr>
+
+<tr>
+<td>maven-source-plugin</td>
+<td>3.0.1</td>
+</tr>
+
+<tr>
+<td>maven-gpg-plugin</td>
+<td>1.6</td>
+</tr>
+</tbody>
+</table>
+
+<p>Source and GPG plugins are defined only in the <code>release</code> profile.</p>
+
+<p><strong>Release Profile:</strong></p>
+
+<p>Sonatype plugin <code>nexus-staging-maven-plugin</code> is defined in the release profile which provides support for publishing artifacts to Central Maven repository.</p>
+
+<p><strong>License:</strong>
+This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
+
+  </div>
+</div>
+
+    </div>
+    <footer class="footer is-paddingless">
+      <div>
+        <br/>
+        <p class="buttons is-centered">
+          <a class="button" href="https://github.com/prashantbhat/prashantbhat.github.io" target="_blank" title="Code repository">
+            <span class="icon is-small"><i class="fab fa-github"></i></span>
+          </a>
+          <a class="button" href="https://twitter.com/prashantbhat" target="_blank" title="Follow me @prashantbhat">
+            <span class="icon is-small has-text-info"><i class="fab fa-twitter"></i></span>
+          </a>
+          <a class="button" href="/blog/index.xml" title="Subscribe to RSS">
+            <span class="icon is-small has-text-danger"><i class="fas fa-rss"></i></span>
+          </a>
+        </p>
+        <p class="has-text-centered">Copyright 2016-2019 &copy; Prashant Bhat.<br/>
+          The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+        <br/>
+      </div>
+    </footer>
+  </body>
+</html>

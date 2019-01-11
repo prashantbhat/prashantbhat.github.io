@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Prashant Bhat&#39;s Website</title>
+    <link>/</link>
+    <description>Recent content on Prashant Bhat&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing Pustike Event Bus</title>
+      <link>/blog/introducing-pustike-eventbus/</link>
+      <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/introducing-pustike-eventbus/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-eventbus&#34;&gt;Pustike EventBus&lt;/a&gt; is a fork of &lt;a href=&#34;https://github.com/google/guava/wiki/EventBusExplained&#34;&gt;Guava EventBus&lt;/a&gt;, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Importance of Accounting</title>
+      <link>/blog/importance-of-accounting/</link>
+      <pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/importance-of-accounting/</guid>
+      <description>&lt;p&gt;The importance of financial accounting practices is well known and majority of businesses have well established processes to record, summarize and analyze the historical and prospective information. Financial data is not only required to fulfill legal &amp;amp; tax reporting obligations but it also provides an overview of operational performance through management reporting, that helps to make informed business decisions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Personal Website and Blog</title>
+      <link>/blog/my-personal-website/</link>
+      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/my-personal-website/</guid>
+      <description>&lt;p&gt;Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
+&lt;br/&gt;&lt;br/&gt;
+So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience. You can contact me on &lt;a href=&#34;https://github.com/prashantbhat/prashantbhat.github.io/issues/new&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Sat, 13 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
+So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests.</description>
+    </item>
+    
+    <item>
+      <title>Commons CSV</title>
+      <link>/projects/commons-csv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/commons-csv/</guid>
+      <description>Apache Commons CSV    This library is a fork of the Apache Commons CSV. The source code is published as a GitHub Project under Apache License.
+Additionally, it has following changes:
+ Added module-info.java and requires Java 11. Replace Assertions.notNull() usage with Objects.requireNonNull() Remove dependency on java.sql module and remove unnecessary boxing  Documentation:
+Latest API docs are accessible here.
+Download:
+To add a dependency using Maven, use the following:</description>
+    </item>
+    
+    <item>
+      <title>Javax Inject</title>
+      <link>/projects/javax.inject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/javax.inject/</guid>
+      <description>Java Inject API    This library is a fork of the JSR-330 specification. The source code is published as a GitHub Project under Apache License.
+Additionally, it has following changes:
+ Added module-info.java and requires Java 11. Fixed HTML 5 errors in javadocs  Documentation: Latest API docs are accessible here.
+Download:
+To add a dependency using Maven, use the following:
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  To add a dependency using Gradle:</description>
+    </item>
+    
+    <item>
+      <title>Pustike Event Bus</title>
+      <link>/projects/pustike-eventbus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-eventbus/</guid>
+      <description>Pustike EventBus    Pustike EventBus is a fork of Guava EventBus, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.
+EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur.</description>
+    </item>
+    
+    <item>
+      <title>Pustike Inject</title>
+      <link>/projects/pustike-inject/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-inject/</guid>
+      <description>Pustike Inject    Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
+Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to defines bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</description>
+    </item>
+    
+    <item>
+      <title>Pustike Maven Parent</title>
+      <link>/projects/pustike-maven-parent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-maven-parent/</guid>
+      <description>Pustike Maven Parent   This project contains common Maven configuration for Pustike projects and is published as a GitHub Project under Apache License.
+Usage:
+Include it in the parent section of pom.xml, as shown here:
+&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.0&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
+ Project&amp;rsquo;s source encoding is set to: UTF-8 Compiler&amp;rsquo;s source and target are set to Java version: 11  Dependencies:
+Test dependencies for JUnit 5 are included.</description>
+    </item>
+    
+    <item>
+      <title>Pustike Persist</title>
+      <link>/projects/pustike-persist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-persist/</guid>
+      <description>Pustike Persist Work In Progress&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Pustike Web</title>
+      <link>/projects/pustike-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-web/</guid>
+      <description>Pustike Web Work In Progress&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>/projects/website/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/website/</guid>
+      <description>Website Work In Progress&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

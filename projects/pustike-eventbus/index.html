@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Prashant Bhat">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <script src="/js/fontawesome.min.js"></script>
+    <script src="/js/website-icons.min.js"></script>
+    <script src="/js/bulma.js"></script>
+    <title>Prashant Bhat&#39;s Website</title>
+  </head>
+
+  <body class="has-navbar-fixed-top has-small-margin">
+    <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+            
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <img src="/images/pb-logo-navbar.png" width="28" height="28">
+          </a>
+          <a class="navbar-item is-paddingless" href="/">
+            <strong class="is-size-4 has-text-link">Prashant Bhat</strong>
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item"></a>
+            <a class="navbar-item" href="/projects">Projects</a>
+            <a class="navbar-item" href="/blog">Blog</a>
+            <a class="navbar-item" href="/about">About</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </nav>
+    <div class="container">
+
+
+<div>
+  <div class="content has-text-justified">
+    
+
+<h2 id="pustike-eventbus-maven-central-img-maven-central-javadocs-img-javadocs-license-img-license">Pustike EventBus     <a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-eventbus"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-eventbus/badge.svg" alt="" /></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-eventbus"><img src="https://javadoc.io/badge/io.github.pustike/pustike-eventbus.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></h2>
+
+<p><a href="https://github.com/pustike/pustike-eventbus">Pustike EventBus</a> is a fork of <a href="https://github.com/google/guava/wiki/EventBusExplained">Guava EventBus</a>, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.</p>
+
+<p>EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur. And some publish events on the bus. The bus notifies each of the registrants when the event is published. So registrant objects and event-source objects need not know about each other directly. Each may join or depart the bus at any time. Thus it enables central communication between components, simplifies the code and removes direct dependencies.</p>
+
+<p><img src="/images/projects/pustike-eventbus.png" width="760" height="200"></p>
+
+<p>The <a href="https://github.com/google/guava">Guava Project</a> contains several core libraries and is distributed as a single module that has a size of ~2.2MB (as of v19.0).
+An application using only the EventBus will also need to include the full Guava dependency. So, this is an effort to extract only the event bus library from Guava project without any other dependencies.</p>
+
+<p>This library also provides few additional features / changes, like:</p>
+
+<ul>
+<li>Typed Events supporting event type specific subscribers</li>
+<li>Error handling using ExceptionEvents</li>
+<li>WeakReference to target subscribers</li>
+<li><code>@Subscribe(threadSafe = true)</code> instead of <code>@AllowConcurrentEvents</code></li>
+<li>Unregistering a not-registered subscriber doesn&rsquo;t throw exception</li>
+<li>Allows using an external cache for loading subscriber methods and event type hierarchy</li>
+<li>Only ~20kB in size when using default subscriber cache</li>
+<li>Java 11 as the min requirement (Guava supports Java 6 onwards)</li>
+</ul>
+
+<p><strong>Documentation:</strong></p>
+
+<ul>
+<li>User&rsquo;s Guide is included in the project&rsquo;s <a href="https://github.com/pustike/pustike-eventbus#event-bus">README.md</a> file.</li>
+<li>Latest API docs are accessible <a href="https://pustike.github.io/pustike-eventbus/docs/latest/api/">here</a>.</li>
+</ul>
+
+<p><strong>Latest Release:</strong> The most recent release is v1.5.0 (2018-09-28).</p>
+
+<p>To add a dependency using Maven, use the following:</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
+    &lt;artifactId&gt;pustike-eventbus&lt;/artifactId&gt;
+    &lt;version&gt;1.5.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>To add a dependency using Gradle:</p>
+
+<pre><code>dependencies {
+    compile 'io.github.pustike:pustike-eventbus:1.5.0'
+}
+</code></pre>
+
+<p>Or, download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-eventbus&amp;v=LATEST">latest JAR</a></p>
+
+<p><strong>License:</strong>
+This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
+
+  </div>
+</div>
+
+    </div>
+    <footer class="footer is-paddingless">
+      <div>
+        <br/>
+        <p class="buttons is-centered">
+          <a class="button" href="https://github.com/prashantbhat/prashantbhat.github.io" target="_blank" title="Code repository">
+            <span class="icon is-small"><i class="fab fa-github"></i></span>
+          </a>
+          <a class="button" href="https://twitter.com/prashantbhat" target="_blank" title="Follow me @prashantbhat">
+            <span class="icon is-small has-text-info"><i class="fab fa-twitter"></i></span>
+          </a>
+          <a class="button" href="/blog/index.xml" title="Subscribe to RSS">
+            <span class="icon is-small has-text-danger"><i class="fas fa-rss"></i></span>
+          </a>
+        </p>
+        <p class="has-text-centered">Copyright 2016-2019 &copy; Prashant Bhat.<br/>
+          The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+        <br/>
+      </div>
+    </footer>
+  </body>
+</html>
