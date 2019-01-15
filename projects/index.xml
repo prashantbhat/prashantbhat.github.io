@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/commons-csv/</guid>
-      <description>Apache Commons CSV    This library is a fork of the Apache Commons CSV. The source code is published as a GitHub Project under Apache License.
+      <description>Apache Commons CSV This library is a fork of the Apache Commons CSV. The source code is published as a GitHub Project under Apache License.
 Additionally, it has following changes:
  Added module-info.java and requires Java 11. Replace Assertions.notNull() usage with Objects.requireNonNull() Remove dependency on java.sql module and remove unnecessary boxing  Documentation:
 Latest API docs are accessible here.
@@ -31,7 +31,7 @@ To add a dependency using Maven, use the following:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/javax.inject/</guid>
-      <description>Java Inject API    This library is a fork of the JSR-330 specification. The source code is published as a GitHub Project under Apache License.
+      <description>Java Inject API This library is a fork of the JSR-330 specification. The source code is published as a GitHub Project under Apache License.
 Additionally, it has following changes:
  Added module-info.java and requires Java 11. Fixed HTML 5 errors in javadocs  Documentation: Latest API docs are accessible here.
 Download:
@@ -45,7 +45,7 @@ To add a dependency using Maven, use the following:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-eventbus/</guid>
-      <description>Pustike EventBus    Pustike EventBus is a fork of Guava EventBus, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.
+      <description>Pustike EventBus Pustike EventBus is a fork of Guava EventBus, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.
 EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur.</description>
     </item>
     
@@ -55,7 +55,7 @@ EventBus is a library providing publisher/subscriber pattern for loose coupling 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-inject/</guid>
-      <description>Pustike Inject    Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
+      <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
 Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to defines bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</description>
     </item>
     
@@ -65,7 +65,8 @@ Injector is the core part of this library and tracks all dependencies for all ty
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-maven-parent/</guid>
-      <description>Pustike Maven Parent   This project contains common Maven configuration for Pustike projects and is published as a GitHub Project under Apache License.
+      <description>Pustike Maven Parent This project contains common Maven configuration for Pustike projects and is published as a GitHub Project under Apache License.
+ 
 Usage:
 Include it in the parent section of pom.xml, as shown here:
 &amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.0&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:

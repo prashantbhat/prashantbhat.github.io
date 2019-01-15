@@ -14,7 +14,7 @@
     <title>Prashant Bhat&#39;s Website</title>
   </head>
 
-  <body class="has-navbar-fixed-top has-small-margin">
+  <body class="has-navbar-fixed-top is-margin-6">
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
             
       <div class="container">
@@ -35,7 +35,21 @@
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item"></a>
-            <a class="navbar-item" href="/projects">Projects</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/projects">Projects</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
+                <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
+                <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
+                <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
+                <a class="navbar-item" href="/projects/commons-csv">Commons CSV</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/pustike-maven-parent">Pustike Maven Parent</a>
+                <a class="navbar-item" href="/projects/website">Website using Hugo</a>
+              </div>
+            </div>
             <a class="navbar-item" href="/blog">Blog</a>
             <a class="navbar-item" href="/about">About</a>
           </div>
@@ -110,8 +124,11 @@
     <h1 class="title is-5 is-marginless">
       <a href="/blog/introducing-pustike-eventbus/" itemprop="headline">Introducing Pustike Event Bus</a>
     </h1>
-    <div class="is-italic">
+    <div class="is-italic is-size-7 has-text-grey">
+      <span><i class="fas fa-calendar-alt"></i></span>
       <time datetime=" 2016-07-19T00:00:00&#43;00:00">19 Jul, 2016</time>
+      &nbsp; | &nbsp;
+      <span><i class="fas fa-clock"></i> 7 minute read</span>
     </div>
     <h2 class="content has-text-justified" itemprop="description">
       <p><a href="https://github.com/pustike/pustike-eventbus">Pustike EventBus</a> is a fork of <a href="https://github.com/google/guava/wiki/EventBusExplained">Guava EventBus</a>, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.</p>
@@ -128,8 +145,11 @@
     <h1 class="title is-5 is-marginless">
       <a href="/blog/importance-of-accounting/" itemprop="headline">Importance of Accounting</a>
     </h1>
-    <div class="is-italic">
+    <div class="is-italic is-size-7 has-text-grey">
+      <span><i class="fas fa-calendar-alt"></i></span>
       <time datetime=" 2016-07-05T00:00:00&#43;00:00">5 Jul, 2016</time>
+      &nbsp; | &nbsp;
+      <span><i class="fas fa-clock"></i> 6 minute read</span>
     </div>
     <h2 class="content has-text-justified" itemprop="description">
       <p>The importance of financial accounting practices is well known and majority of businesses have well established processes to record, summarize and analyze the historical and prospective information. Financial data is not only required to fulfill legal &amp; tax reporting obligations but it also provides an overview of operational performance through management reporting, that helps to make informed business decisions.</p>
@@ -146,8 +166,11 @@
     <h1 class="title is-5 is-marginless">
       <a href="/blog/my-personal-website/" itemprop="headline">My Personal Website and Blog</a>
     </h1>
-    <div class="is-italic">
+    <div class="is-italic is-size-7 has-text-grey">
+      <span><i class="fas fa-calendar-alt"></i></span>
       <time datetime=" 2016-06-19T00:00:00&#43;00:00">19 Jun, 2016</time>
+      &nbsp; | &nbsp;
+      <span><i class="fas fa-clock"></i> 3 minute read</span>
     </div>
     <h2 class="content has-text-justified" itemprop="description">
       <p>Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.

@@ -12,7 +12,7 @@
     <title>Prashant Bhat&#39;s Website</title>
   </head>
 
-  <body class="has-navbar-fixed-top has-small-margin">
+  <body class="has-navbar-fixed-top is-margin-6">
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
             
       <div class="container">
@@ -33,7 +33,21 @@
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item"></a>
-            <a class="navbar-item" href="/projects">Projects</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/projects">Projects</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
+                <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
+                <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
+                <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
+                <a class="navbar-item" href="/projects/commons-csv">Commons CSV</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/pustike-maven-parent">Pustike Maven Parent</a>
+                <a class="navbar-item" href="/projects/website">Website using Hugo</a>
+              </div>
+            </div>
             <a class="navbar-item" href="/blog">Blog</a>
             <a class="navbar-item" href="/about">About</a>
           </div>

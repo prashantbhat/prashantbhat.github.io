@@ -12,7 +12,7 @@
     <title>Prashant Bhat&#39;s Website</title>
   </head>
 
-  <body class="has-navbar-fixed-top has-small-margin">
+  <body class="has-navbar-fixed-top is-margin-6">
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
             
       <div class="container">
@@ -33,7 +33,21 @@
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item"></a>
-            <a class="navbar-item" href="/projects">Projects</a>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" href="/projects">Projects</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
+                <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
+                <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
+                <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
+                <a class="navbar-item" href="/projects/commons-csv">Commons CSV</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="/projects/pustike-maven-parent">Pustike Maven Parent</a>
+                <a class="navbar-item" href="/projects/website">Website using Hugo</a>
+              </div>
+            </div>
             <a class="navbar-item" href="/blog">Blog</a>
             <a class="navbar-item" href="/about">About</a>
           </div>
@@ -49,6 +63,15 @@
 
 <div>
   <h1 class ="title">Importance of Accounting</h1>
+
+  
+  <div class="subtitle is-italic is-6 has-text-grey">
+    <span><i class="fas fa-calendar-alt"></i></span>
+    <time datetime=" 2016-07-05T00:00:00&#43;00:00">5 Jul, 2016</time>
+    &nbsp; | &nbsp;
+    <span><i class="fas fa-clock"></i> 6 minute read</span>
+  </div>
+  
 
   <div class="content has-text-justified">
     <p>The importance of financial accounting practices is well known and majority of businesses have well established processes to record, summarize and analyze the historical and prospective information. Financial data is not only required to fulfill legal &amp; tax reporting obligations but it also provides an overview of operational performance through management reporting, that helps to make informed business decisions.</p>
@@ -106,13 +129,24 @@
 
 <p>A good accounting system is necessary to record and analyze financial transactions. It is also important to standardize processes, by defining SOPs to streamline all regular activities. In this blog, I&rsquo;ll document features of an accounting solution, based on my experience in building and using such a system.</p>
 
-<hr />
-
 <p>Post your comments <a href="https://github.com/prashantbhat/prashantbhat.github.io/issues/2">here</a>.</p>
+  </div>
+  
+<div class="is-margin-bottom-6">
+  <div class="subtitle is-italic is-6 has-text-grey">
+    <hr class="is-margin-8"/>
+    <span><i class="fas fa-tags"></i>Tags:</span>
+    
+    
+    <a href="/tags/accounting">accounting</a>
+    
   </div>
 </div>
 
-<nav class="pagination is-centered has-small-margin" role="navigation" aria-label="pagination">
+
+</div>
+
+<nav class="pagination is-centered is-margin-bottom-9" role="navigation" aria-label="pagination">
   
   <a class="pagination-previous has-text-link" href="/blog/my-personal-website/">Previous</a>
   

@@ -4,6 +4,15 @@
 .page-summary {
     margin-bottom: 1.0em;
 }
-.has-small-margin {
-    margin: 0.25em;
+.is-margin-6 {
+    margin: 1em;
+}
+.is-margin-8 {
+    margin: 0.5em;
+}
+.is-margin-bottom-6 {
+    margin-bottom: 1em;
+}
+.is-margin-bottom-9 {
+    margin-bottom: 0.25em;
 }
