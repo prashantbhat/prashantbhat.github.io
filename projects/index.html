@@ -5,7 +5,7 @@
     <meta name="description" content="Personal website of Prashant Bhat">
     <link rel="alternate" type="application/rss+xml" href="/projects/index.xml" title="Prashant Bhat's Website" />
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/website.min.css">
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
     <script src="/js/fontawesome.min.js"></script>
     <script src="/js/website-icons.min.js"></script>
@@ -13,18 +13,16 @@
     <title>Prashant Bhat&#39;s Website</title>
   </head>
 
-  <body class="has-navbar-fixed-top is-margin-6">
+  <body class="has-navbar-fixed-top">
     <nav class="navbar has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
-            
-      <div class="container">
+            <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item" href="/">
-            <img src="/images/pb-logo-navbar.png" width="28" height="28">
+            <img src="/images/navbar-logo.png" width="28" height="28">
           </a>
           <a class="navbar-item is-paddingless" href="/">
             <strong class="is-size-4 has-text-link">Prashant Bhat</strong>
           </a>
-
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -33,7 +31,7 @@
         </div>
         <div id="navbarMenu" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item"></a>
+            <div class="navbar-item is-hidden-touch"></div>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link" href="/projects">Projects</a>
               <div class="navbar-dropdown">
@@ -54,136 +52,130 @@
           </div>
         </div>
       </div>
-
-
-
-
     </nav>
-    <div class="container">
-
-
-<div class="content has-text-justified">
-  
+    <section class="section is-margin-8">
+      <div class="container">
+        <div class="content has-text-justified">
+          
 
 <h4 id="projects">Projects:</h4>
 
 <p>All applications/projects, that I have developed or worked on, make use of <strong>open source</strong> libraries extensively. So, following are some of the libraries I&rsquo;m contributing back to the community.</p>
 
-</div>
-
-<div class="columns is-multiline is-paddingless">
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title"><a href="/projects/pustike-inject">Pustike Inject</a></p>
-      </header>
-      <div class="card-content">
-        Implementation of JSR-330: Dependency Injection for Java.
+        </div>
+        <div class="columns is-multiline is-paddingless">
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title"><a href="/projects/pustike-inject">Pustike Inject</a></p>
+              </header>
+              <div class="card-content">
+                Implementation of JSR-330: Dependency Injection for Java.
+              </div>
+              <div class="card-image">
+                <figure class="image">
+                  <a href="/projects/pustike-inject">
+                    <img src="/images/projects/pustike-inject.png" width="760" height="200">
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title">
+                  <a href="/projects/pustike-eventbus">
+                    <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
+                    Pustike EventBus
+                  </a>
+                </p>
+              </header>
+              <div class="card-content">
+                Event Bus based on publish-subscribe pattern.
+              </div>
+              <div class="card-image">
+                <figure class="image">
+                  <a href="/projects/pustike-eventbus">
+                    <img src="/images/projects/pustike-eventbus.png" width="760" height="200">
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title"><a href="/projects/pustike-web">Pustike Web</a></p>
+              </header>
+              <div class="card-content">
+                RESTful Web services using JAX-RS like API. (Work In Progress)
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title"><a href="/projects/pustike-persist">Pustike Persist</a></p>
+              </header>
+              <div class="card-content">
+                Object Persistence API (Work In Progress)
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title">
+                    <a href="/projects/javax.inject">
+                      <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
+                      Javax Inject
+                    </a>
+                </p>
+              </header>
+              <div class="card-content">
+                A fork of the JSR-330 specification.
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title">
+                  <a href="/projects/commons-csv">
+                    <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
+                    Commons CSV
+                  </a>
+                </p>
+              </header>
+              <div class="card-content">
+                This library is a fork of the Apache Commons CSV.
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title"><a href="/projects/pustike-maven-parent">Pustike Maven Parent</a></p>
+              </header>
+              <div class="card-content">
+                Contains common Maven configuration for Pustike projects.
+              </div>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="card">
+              <header class="card-header has-background-white-ter">
+                <p class="card-header-title"><a href="/projects/website">Website</a></p>
+              </header>
+              <div class="card-content">
+                My personal blog and website built using Hugo. (Work In Progress)
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-image">
-        <figure class="image">
-          <a href="/projects/pustike-inject">
-            <img src="/images/projects/pustike-inject.png" width="760" height="200">
-          </a>
-        </figure>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title">
-          <a href="/projects/pustike-eventbus">
-            <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
-            Pustike EventBus
-          </a>
-        </p>
-      </header>
-      <div class="card-content">
-        Event Bus based on publish-subscribe pattern.
-      </div>
-      <div class="card-image">
-        <figure class="image">
-          <a href="/projects/pustike-eventbus">
-            <img src="/images/projects/pustike-eventbus.png" width="760" height="200">
-          </a>
-        </figure>
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title"><a href="/projects/pustike-web">Pustike Web</a></p>
-      </header>
-      <div class="card-content">
-        RESTful Web services using JAX-RS like API. (Work In Progress)
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title"><a href="/projects/pustike-persist">Pustike Persist</a></p>
-      </header>
-      <div class="card-content">
-        Object Persistence API (Work In Progress)
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title">
-            <a href="/projects/javax.inject">
-              <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
-              Javax Inject
-            </a>
-        </p>
-      </header>
-      <div class="card-content">
-        A fork of the JSR-330 specification.
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title">
-          <a href="/projects/commons-csv">
-            <span class="icon has-text-grey-dark"><i class="fas fa-code-branch"></i></span>
-            Commons CSV
-          </a>
-        </p>
-      </header>
-      <div class="card-content">
-        This library is a fork of the Apache Commons CSV.
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title"><a href="/projects/pustike-maven-parent">Pustike Maven Parent</a></p>
-      </header>
-      <div class="card-content">
-        Contains common Maven configuration for Pustike projects.
-      </div>
-    </div>
-  </div>
-  <div class="column is-half">
-    <div class="card">
-      <header class="card-header has-background-white-ter">
-        <p class="card-header-title"><a href="/projects/website">Website</a></p>
-      </header>
-      <div class="card-content">
-        My personal blog and website built using Hugo. (Work In Progress)
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
+    </section>
     <footer class="footer is-paddingless">
       <div>
         <br/>
@@ -206,4 +198,3 @@
     </footer>
   </body>
 </html>
-
