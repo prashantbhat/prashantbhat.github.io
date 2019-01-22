@@ -36,8 +36,8 @@
               <div class="navbar-dropdown">
                 <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
                 <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
-                <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
                 <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
                 <hr class="navbar-divider">
                 <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
                 <a class="navbar-item" href="/projects/commons-csv">Commons CSV</a>
@@ -52,7 +52,7 @@
         </div>
       </div>
     </nav>
-    <section class="section is-margin-8">
+    <div class="is-margin-8">
       <div class="container">
 
 <div>
@@ -61,13 +61,63 @@
 
 <h2 id="pustike-persist">Pustike Persist</h2>
 
-<p>Work In Progress&hellip;</p>
+<p><a href="https://github.com/pustike/pustike-persist">Pustike Persist</a> is an object based persistence library. Using a simple configuration and annotation based entity mapping, it provides features like schema generation, sql query api to insert / update / delete objects and a fluent data finder api.</p>
+
+<p>Using <a href="https://en.wikipedia.org/wiki/Java_Persistence_API">Java Persistence API</a> is the standard approach to object persistence in Java based applications. And it is a comprehensive and complex API to implement and use. Using a JPA implementation for persistence can add lot of overhead to small/medium sized applications. So, Pustike Persist provides a simple api to perform common SQL queries using object metadata built using JPA like annotations.</p>
+
+<p>Following are some of its key features:</p>
+
+<ul>
+<li>Repository configuration using dataSource and schema metadata</li>
+<li>Entity mapping to database table and fields to columns using annotations</li>
+<li>Database schema generation with index, foreign keys, constraints, etc using the mapping tool</li>
+<li>Allows field group definitions per entity to fetch or update only the required data</li>
+<li>Insert single/list of objects into database in batch and support update on conflict using excluded rows</li>
+<li>Update single/multiple objects in the database using the specified field group</li>
+<li>Select row data as object with the given identity and option to select them for update with lock</li>
+<li>Delete single/multiple objects</li>
+<li>A fluent Finder API to construct sql queries and fetch result data as objects</li>
+<li>Supported databases: PostgreSQL</li>
+<li>Requires Java 11 and has no external dependencies (~60kB in size)</li>
+</ul>
+
+<p><strong>Documentation:</strong></p>
+
+<ul>
+<li>User&rsquo;s Guide is included in the project&rsquo;s <a href="https://github.com/pustike/pustike-persist">README.md</a> file.</li>
+<li>Latest API docs are accessible <a href="https://pustike.github.io/pustike-persist/docs/latest/api/">here</a>.</li>
+</ul>
+
+<p><strong>Latest Release:</strong> The most recent release is v0.9.0 (2019-01-22).</p>
+
+<p>To add a dependency using Maven, use the following:</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
+    &lt;artifactId&gt;pustike-persist&lt;/artifactId&gt;
+    &lt;version&gt;0.9.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>To add a dependency using Gradle:</p>
+
+<pre><code>dependencies {
+    compile 'io.github.pustike:pustike-persist:0.9.0'
+}
+</code></pre>
+
+<p>Or, download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-persist&amp;v=LATEST">latest JAR</a></p>
+
+<p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-persist"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-persist/badge.svg" alt="" /></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-persist"><img src="https://javadoc.io/badge/io.github.pustike/pustike-persist.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></p>
+
+<p><strong>License:</strong>
+This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
 
   </div>
 </div>
 
       </div>
-    </section>
+    </div>
     <footer class="footer is-paddingless">
       <div>
         <br/>

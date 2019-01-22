@@ -80,7 +80,8 @@ Test dependencies for JUnit 5 are included.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-persist/</guid>
-      <description>Pustike Persist Work In Progress&amp;hellip;</description>
+      <description>Pustike Persist Pustike Persist is an object based persistence library. Using a simple configuration and annotation based entity mapping, it provides features like schema generation, sql query api to insert / update / delete objects and a fluent data finder api.
+Using Java Persistence API is the standard approach to object persistence in Java based applications. And it is a comprehensive and complex API to implement and use. Using a JPA implementation for persistence can add lot of overhead to small/medium sized applications.</description>
     </item>
     
     <item>
