@@ -69,7 +69,7 @@ Injector is the core part of this library and tracks all dependencies for all ty
  
 Usage:
 Include it in the parent section of pom.xml, as shown here:
-&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.0&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
+&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.1&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
  Project&amp;rsquo;s source encoding is set to: UTF-8 Compiler&amp;rsquo;s source and target are set to Java version: 11  Dependencies:
 Test dependencies for JUnit 5 are included.</description>
     </item>
@@ -90,7 +90,8 @@ Using Java Persistence API is the standard approach to object persistence in Jav
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-web/</guid>
-      <description>Pustike Web Work In Progress&amp;hellip;</description>
+      <description>Pustike Web Pustike Web provides API for creating application using RESTful Web Services with a central servlet DispatcherServlet, having an API similar to JAX-RS. Applications developed using this library can be deployed in any Servlet container like other web frameworks.
+The WebServletContextListener and a DispatcherServlet need to be declared and mapped according to the Servlet specification by using Java configuration or in web.xml. During servlet context initialization, the dependency injector should be configured using the ServletModule and other application specific modules.</description>
     </item>
     
     <item>
