@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>/blog/my-personal-website/</loc>
-    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
   </url>
@@ -38,12 +33,6 @@
   <url>
     <loc>/tags/accounting/</loc>
     <lastmod>2016-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -95,12 +84,6 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2016-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/website/</loc>
-    <lastmod>2016-06-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

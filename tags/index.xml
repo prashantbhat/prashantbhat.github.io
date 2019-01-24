@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>/tags/blog/</link>
-      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Eventbus</title>
       <link>/tags/eventbus/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
@@ -45,15 +36,6 @@
       <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
       
       <guid>/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Website</title>
-      <link>/tags/website/</link>
-      <pubDate>Sun, 19 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/website/</guid>
       <description></description>
     </item>
     
