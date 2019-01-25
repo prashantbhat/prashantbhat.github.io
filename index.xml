@@ -31,13 +31,14 @@
     </item>
     
     <item>
-      <title>About</title>
+      <title>About Me</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
-So this website is a central place to record my understandings on topics of interest and also to share with others of similar interests.</description>
+      <description>I&amp;rsquo;m a Java Software Architect, based in Singapore, building Financial and Supply Chain Management systems. I&amp;rsquo;m currently developing a web application, with a multi-tenant architecture, for small/medium business users to maintain their accounting data.
+Work Experience:
+ ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team. Created desktop application in Java with client-server communication and rich client based user interface.</description>
     </item>
     
     <item>
@@ -51,7 +52,7 @@ Additionally, it has following changes:
  Added module-info.java and requires Java 11. Replace Assertions.notNull() usage with Objects.requireNonNull() Remove dependency on java.sql module and remove unnecessary boxing  Documentation:
 Latest API docs are accessible here.
 Download:
-To add a dependency using Maven, use the following:</description>
+To add it as a dependency in Maven builds, use the following:</description>
     </item>
     
     <item>
@@ -62,10 +63,11 @@ To add a dependency using Maven, use the following:</description>
       <guid>/projects/javax.inject/</guid>
       <description>Java Inject API This library is a fork of the JSR-330 specification. The source code is published as a GitHub Project under Apache License.
 Additionally, it has following changes:
- Added module-info.java and requires Java 11. Fixed HTML 5 errors in javadocs  Documentation: Latest API docs are accessible here.
+ Added module-info.java and requires Java 11. Fixed HTML 5 errors in javadocs  Documentation:
+Latest API docs are accessible here.
 Download:
-To add a dependency using Maven, use the following:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  To add a dependency using Gradle:</description>
+To add it as a dependency in Maven builds, use the following:
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Or, download the latest JAR from Maven central repository.</description>
     </item>
     
     <item>
@@ -129,7 +131,7 @@ The WebServletContextListener and a DispatcherServlet need to be declared and ma
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/website/</guid>
-      <description>Website Based on everyday experience, we gain better understanding of certain concepts and some times get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
+      <description>Website Based on everyday experience, we gain better understanding of certain concepts and sometimes get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
 So this website is a central place to record my understandings on topics of interest and also to share with others.</description>
     </item>
     
