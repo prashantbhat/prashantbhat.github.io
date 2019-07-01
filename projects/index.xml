@@ -57,7 +57,7 @@ EventBus is a library providing publisher/subscriber pattern for loose coupling 
       
       <guid>/projects/pustike-inject/</guid>
       <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
-Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to defines bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</description>
+Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</description>
     </item>
     
     <item>
@@ -70,7 +70,7 @@ Injector is the core part of this library and tracks all dependencies for all ty
  
 Usage:
 Include it in the parent section of pom.xml, as shown here:
-&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.1&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
+&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.2&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
  Project&amp;rsquo;s source encoding is set to: UTF-8 Compiler&amp;rsquo;s source and target are set to Java version: 11  Dependencies:
 Test dependencies for JUnit 5 are included.</description>
     </item>

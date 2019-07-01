@@ -157,15 +157,17 @@ public void onTypedStringEvent(TypedEvent&lt;String&gt; event) {
 }
 // ... and publish the event as following
 bus.publish(new TypedEvent&lt;&gt;(&quot;Hello!&quot;));// note that this will not be matched to TypedEvent&lt;Integer&gt; subscriber!
-</code></pre></li>
+</code></pre>
 
-<li><p><strong>Dead Event</strong>: is a wrapper for an event that was posted, but which had no subscribers and thus could not be delivered. Registering a DeadEvent subscriber is useful for debugging or logging, as it can detect mis-configurations in a system&rsquo;s event distribution.</p>
-
-<pre><code class="language-java">@Subscribe
+<ul>
+<li><strong>Dead Event</strong>: is a wrapper for an event that was posted, but which had no subscribers and thus could not be delivered. Registering a DeadEvent subscriber is useful for debugging or logging, as it can detect mis-configurations in a system&rsquo;s event distribution.
+<code>java
+@Subscribe
 public void onDeadEvent(DeadEvent deadEvent) {
-    // deadEvent.getEvent(); // the event that could not be delivered.
+// deadEvent.getEvent(); // the event that could not be delivered.
 }
-</code></pre></li>
+</code></li>
+</ul></li>
 
 <li><p><strong>ExceptionEvent</strong>: When any exceptions occur on the bus during handler execution, this event will be published. This is useful for logging and should be handled by the application. It provides access to the listener object, subscriber method, the event posted and the original exception that caused this event to be published. This can be handled similar to any other event as:</p>
 
@@ -173,46 +175,46 @@ public void onDeadEvent(DeadEvent deadEvent) {
 public void onException(ExceptionEvent exceptionEvent) {
     // process the exception info here...
 }
-</code></pre></li>
-</ul>
+</code></pre>
 
 <h3 id="using-external-cache">Using external Cache</h3>
 
 <p>By default, the event bus will use a ConcurrentMap internally to cache Subscriber methods identified on registering listener objects. To use an external cache like <a href="https://github.com/ben-manes/caffeine">Caffeine</a> for loading &amp; storing subscriber methods in a listener class and type hierarchy of event classes, the following approach can be used:</p>
 
 <pre><code class="language-java">public class CaffeineSubscriberLoader extends DefaultSubscriberLoader {
-    private final LoadingCache&lt;Class&lt;?&gt;, List&lt;Method&gt;&gt; subscriberMethodCache;
-    private final LoadingCache&lt;Class&lt;?&gt;, Set&lt;Class&lt;?&gt;&gt;&gt; typeHierarchyCache;
+private final LoadingCache&lt;Class&lt;?&gt;, List&lt;Method&gt;&gt; subscriberMethodCache;
+private final LoadingCache&lt;Class&lt;?&gt;, Set&lt;Class&lt;?&gt;&gt;&gt; typeHierarchyCache;
 
-    public CaffeineSubscriberLoader() {
-        this.subscriberMethodCache = Caffeine.newBuilder().weakKeys()
-                .build(super::findAnnotatedMethodsNotCached);
-        this.typeHierarchyCache = Caffeine.newBuilder().weakKeys().weakValues()
-                .build(super::flattenHierarchyNotCached);
-    }
+public CaffeineSubscriberLoader() {
+    this.subscriberMethodCache = Caffeine.newBuilder().weakKeys()
+            .build(super::findAnnotatedMethodsNotCached);
+    this.typeHierarchyCache = Caffeine.newBuilder().weakKeys().weakValues()
+            .build(super::flattenHierarchyNotCached);
+}
 
-    @Override
-    public List&lt;Method&gt; findSubscriberMethods(Class&lt;?&gt; clazz) {
-        return subscriberMethodCache.get(clazz);
-    }
+@Override
+public List&lt;Method&gt; findSubscriberMethods(Class&lt;?&gt; clazz) {
+    return subscriberMethodCache.get(clazz);
+}
 
-    @Override
-    public Set&lt;Class&lt;?&gt;&gt; flattenHierarchy(Class&lt;?&gt; clazz) {
-        return typeHierarchyCache.get(clazz);
-    }
+@Override
+public Set&lt;Class&lt;?&gt;&gt; flattenHierarchy(Class&lt;?&gt; clazz) {
+    return typeHierarchyCache.get(clazz);
+}
 
-    @Override
-    public void invalidateAll() {
-        subscribeMethodsCache.invalidateAll();
-        typeHierarchyCache.invalidateAll();
-    }
+@Override
+public void invalidateAll() {
+    subscribeMethodsCache.invalidateAll();
+    typeHierarchyCache.invalidateAll();
+}
 }
 // and create the event bus using this cache
 CaffeineSubscriberLoader subscriberLoader = new CaffeineSubscriberLoader();
 Executor executor = Runnable::run; // a simple direct executor!
 EventBus eventBus = new EventBus(&quot;default&quot;, Dispatcher.perThreadDispatchQueue(),
-        executor, subscriberLoader);
-</code></pre>
+    executor, subscriberLoader);
+</code></pre></li>
+</ul>
 
 <h2 id="other-eventbus-libraries">Other EventBus Libraries</h2>
 
