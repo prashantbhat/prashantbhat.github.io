@@ -37,7 +37,7 @@ Additionally, it has following changes:
 Latest API docs are accessible here.
 Download:
 To add it as a dependency in Maven builds, use the following:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Or, download the latest JAR from Maven central repository.</description>
+&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Or, download the latest-jar from Maven central repository.</description>
     </item>
     
     <item>
@@ -57,7 +57,17 @@ EventBus is a library providing publisher/subscriber pattern for loose coupling 
       
       <guid>/projects/pustike-inject/</guid>
       <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
-Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</description>
+Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).</description>
+    </item>
+    
+    <item>
+      <title>Pustike JSON</title>
+      <link>/projects/pustike-json/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/pustike-json/</guid>
+      <description>Pustike JSON Pustike JSON is a JSON Object Mapper built using Jakarta JSON-P APIs and also provides Serializer/Deserializer implementations for Java JWT library.
+The key feature of this object mapper is it&amp;rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required.</description>
     </item>
     
     <item>
@@ -70,9 +80,10 @@ Injector is the core part of this library and tracks all dependencies for all ty
  
 Usage:
 Include it in the parent section of pom.xml, as shown here:
-&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.2&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
- Project&amp;rsquo;s source encoding is set to: UTF-8 Compiler&amp;rsquo;s source and target are set to Java version: 11  Dependencies:
-Test dependencies for JUnit 5 are included.</description>
+&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.3&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
+ Project&amp;rsquo;s source encoding is set to: UTF-8 maven.compiler.release property is set to Java version: 11  Dependencies:
+Test dependencies for JUnit 5 are included.
+   Group Id Artifact Id Version     org.</description>
     </item>
     
     <item>

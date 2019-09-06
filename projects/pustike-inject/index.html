@@ -37,6 +37,7 @@
                 <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
                 <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
                 <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <a class="navbar-item" href="/projects/pustike-json">Pustike JSON</a>
                 <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
                 <hr class="navbar-divider">
                 <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
@@ -63,7 +64,7 @@
 
 <p><a href="https://github.com/pustike/pustike-inject">Pustike Inject</a> is a simple dependency injection framework that implements the <a href="https://javax-inject.github.io/javax-inject">JSR-330</a> specification.</p>
 
-<p>Injector is the core part of this library and tracks all dependencies for all types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (fields and constructor/methods).</p>
+<p>Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).</p>
 
 <p><img src="/images/projects/pustike-inject.png" width="760" height="200"> <!--align="right"--></p>
 
@@ -87,14 +88,14 @@
 
 <ul>
 <li>User&rsquo;s Guide is included in the project&rsquo;s <a href="https://github.com/pustike/pustike-inject#injector">README.md</a> file.</li>
-<li>Latest API docs are accessible <a href="https://pustike.github.io/pustike-inject/docs/latest/api/">here</a>.</li>
+<li>Latest API docs are accessible <a href="https://javadoc.io/doc/io.github.pustike/pustike-inject">here</a>.</li>
 </ul>
 
 <p><strong>Latest Release:</strong></p>
 
 <p>The most recent release is v1.5.0 (2018-09-28) and it is available from Maven central repository.</p>
 
-<p>Download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-inject&amp;v=LATEST">latest JAR</a> or configure this dependency in Maven build:</p>
+<p>Download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-inject&amp;v=LATEST">latest-jar</a> or configure this dependency in Maven build:</p>
 
 <pre><code class="language-xml">&lt;dependency&gt;
     &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;

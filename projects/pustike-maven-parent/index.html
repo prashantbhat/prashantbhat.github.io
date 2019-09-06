@@ -37,6 +37,7 @@
                 <a class="navbar-item" href="/projects/pustike-inject">Pustike Inject</a>
                 <a class="navbar-item" href="/projects/pustike-eventbus">Pustike EventBus</a>
                 <a class="navbar-item" href="/projects/pustike-persist">Pustike Persist</a>
+                <a class="navbar-item" href="/projects/pustike-json">Pustike JSON</a>
                 <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
                 <hr class="navbar-divider">
                 <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
@@ -72,7 +73,7 @@
 <pre><code class="language-xml">&lt;parent&gt;
     &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
     &lt;artifactId&gt;pustike-maven-parent&lt;/artifactId&gt;
-    &lt;version&gt;0.1.2&lt;/version&gt;
+    &lt;version&gt;0.1.3&lt;/version&gt;
 &lt;/parent&gt;
 </code></pre>
 
@@ -80,7 +81,7 @@
 
 <ul>
 <li>Project&rsquo;s source encoding is set to: <code>UTF-8</code></li>
-<li>Compiler&rsquo;s source and target are set to Java version: <code>11</code></li>
+<li><code>maven.compiler.release</code> property is set to Java version: <code>11</code></li>
 </ul>
 
 <p><strong>Dependencies:</strong></p>
@@ -100,13 +101,13 @@
 <tr>
 <td>org.junit.jupiter</td>
 <td>junit-jupiter-api</td>
-<td>5.4.2</td>
+<td>5.5.1</td>
 </tr>
 
 <tr>
 <td>org.junit.jupiter</td>
 <td>junit-jupiter-engine</td>
-<td>5.4.2</td>
+<td>5.5.1</td>
 </tr>
 </tbody>
 </table>
@@ -136,7 +137,7 @@
 
 <tr>
 <td>maven-javadoc-plugin</td>
-<td>3.1.0</td>
+<td>3.1.1</td>
 </tr>
 
 <tr>
@@ -151,7 +152,7 @@
 
 <tr>
 <td>maven-site-plugin</td>
-<td>3.7.1</td>
+<td>3.8.2</td>
 </tr>
 
 <tr>

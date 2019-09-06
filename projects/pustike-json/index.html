@@ -57,57 +57,88 @@
       <div class="container">
 
 <div>
-  <h1 class ="title">About Me</h1>
-
-  
-
   <div class="content has-text-justified">
-    <p><a href="/" class="is-pulled-right is-margin-8">
-    <img src="/images/profile.png" width="365" height="365">
-</a>
-I&rsquo;m a Java Software Architect, based in Singapore, building Financial and Supply Chain Management systems. I&rsquo;m currently developing a web application, with multi-tenant architecture, for small/medium business users to maintain their accounting data.</p>
+    
 
-<p><strong>Work Experience:</strong></p>
+<h2 id="pustike-json">Pustike JSON</h2>
 
-<ul>
-<li>ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team.</li>
-<li>Created desktop application in Java with client-server communication and rich client based user interface.</li>
-<li>Implemented the ERP solution in 8 different countries and supported updates to manage growing business needs / process changes.</li>
-<li>Published few of my libraries as open source projects, which are listed <a href="/projects">here</a>.</li>
-</ul>
+<p><a href="https://github.com/pustike/pustike-json">Pustike JSON</a> is a JSON Object Mapper built using <a href="https://github.com/eclipse-ee4j/jsonp/">Jakarta JSON-P</a> APIs and also provides Serializer/Deserializer implementations for <a href="https://github.com/jwtk/jjwt/">Java JWT</a> library.</p>
 
-<p>I also enjoy maintaining personal accounts and doing financial consolidation of my two entities having different functional currencies.</p>
+<p>The key feature of this object mapper is it&rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required. But when editing the the same customer object, many additional properties are needed which can be defined in another context. This helps in reducing the transferred data size when communicating with JSON objects in the API.</p>
 
-<p><strong>Personal Interests:</strong></p>
+<p>Following are some of its features:</p>
 
 <ul>
-<li>Studying Shri Satchidanandendra Saraswati Swamiji&rsquo;s books from <a href="http://adhyatmaprakasha.org">Adhyātma Prakāsha Kāryālaya</a>.</li>
-<li>Listening to Indian Classical music</li>
+<li>Read JSON text and convert it to the given type.</li>
+<li>Convert an object to <code>JsonValue</code>, optionally in the given context to include listed fields only.</li>
+<li><code>@JsonIncludes</code> allows multiple contexts to be defined on a class with each of them listing fields to be included in JSON format.</li>
+<li>A <code>TypeConverter</code> utility class to convert objects between given source and target types.</li>
+<li>JWT <code>Serializer</code> implementation using the Object Mapper with JSON-P.</li>
+<li>JWT <code>Deserializer</code> implementation using the Object Mapper with JSON-P.</li>
 </ul>
 
-<p><strong>Academic Qualification:</strong> Bachelor of Engineering (B.E.) in Computer Science and Engineering (CS) from KLE Society’s College of Engineering &amp; Technology, Belgaum affiliated to Visveswaraiah Technological University (VTU).</p>
+<p><strong>Dependencies</strong></p>
 
-<p><strong>Blog on Accounting, Programming:</strong>
-Professionals and Small/Medium Businesses make lot of financial transactions which need to be accounted for reporting and statistical analysis. As Business operations continue to expand and grow, there is a greater need for system solutions to record those activities and standardization of business processes, in order to focus more on their core expertise. With the growing technology adoption in market place, providing online services to customers and access to their own data, has become a necessity.</p>
+<p>This library requires Java 11 and following modules:</p>
 
-<p>Building such a solution for managing personal finances, also addressing requirements of Professional Service providers and Small Businesses, has been of great interest to me. This also enables me to work with latest technologies and improve my understanding of common business processes.</p>
+<table>
+<thead>
+<tr>
+<th>Group Id</th>
+<th>Artifact Id</th>
+<th>Version</th>
+</tr>
+</thead>
 
-<p>So my blogs will focus on topics related to accounting and associated features as well as on programming to develop such solutions.</p>
+<tbody>
+<tr>
+<td>jakarta.json</td>
+<td>jakarta.json-api</td>
+<td>1.1.5</td>
+</tr>
 
-<hr />
+<tr>
+<td>org.glassfish</td>
+<td>jakarta.json</td>
+<td>1.1.5</td>
+</tr>
 
-<p>If you have any feedback about this website&rsquo;s design / content, post your <a href="https://github.com/prashantbhat/prashantbhat.github.io/issues">comments here</a>. Thank you.</p>
+<tr>
+<td>io.jsonwebtoken</td>
+<td>jjwt-api</td>
+<td>0.10.8*</td>
+</tr>
+
+<tr>
+<td>io.jsonwebtoken</td>
+<td>jjwt-impl</td>
+<td>0.10.8*</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Documentation:</strong> Latest javadocs is available <a href="https://javadoc.io/doc/io.github.pustike/pustike-json">here</a>.</p>
+
+<p><strong>Download:</strong></p>
+
+<p>To add it as a dependency in Maven builds, use the following:</p>
+
+<pre><code class="language-xml">&lt;dependency&gt;
+    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
+    &lt;artifactId&gt;pustike-json&lt;/artifactId&gt;
+    &lt;version&gt;0.1.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<p>Or, download the latest JAR(~25kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-json&amp;v=LATEST">Maven Central</a>.</p>
+
+<p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json/badge.svg" alt="" /></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-json"><img src="https://javadoc.io/badge/io.github.pustike/pustike-json.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></p>
+
+<p><strong>License:</strong>
+This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
 
   </div>
-  
 </div>
-<nav class="pagination is-centered is-margin-bottom-9" role="navigation" aria-label="pagination">
-  
-
-  
-  <ul class="pagination-list">
-  </ul>
-</nav>
 
       </div>
     </div>
