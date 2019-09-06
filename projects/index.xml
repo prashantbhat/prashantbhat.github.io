@@ -66,8 +66,8 @@ Injector is the core part of this library and it tracks dependencies for types c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-json/</guid>
-      <description>Pustike JSON Pustike JSON is a JSON Object Mapper built using Jakarta JSON-P APIs and also provides Serializer/Deserializer implementations for Java JWT library.
-The key feature of this object mapper is it&amp;rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required.</description>
+      <description>Pustike JSON Pustike JSON library provides an ObjectMapper class that can create Java objects from JSON or create JSON value from Java objects, by using Jakarta JSON-P APIs internally. And it also integrates with Java JWT library by providing implementations for Serializer, Deserializer services.
+The key feature of this object mapper is it&amp;rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context.</description>
     </item>
     
     <item>
