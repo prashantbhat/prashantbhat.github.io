@@ -40,9 +40,6 @@
                 <a class="navbar-item" href="/projects/pustike-json">Pustike JSON</a>
                 <a class="navbar-item" href="/projects/pustike-web">Pustike Web</a>
                 <hr class="navbar-divider">
-                <a class="navbar-item" href="/projects/javax.inject">Javax Inject</a>
-                <a class="navbar-item" href="/projects/commons-csv">Commons CSV</a>
-                <hr class="navbar-divider">
                 <a class="navbar-item" href="/projects/pustike-maven-parent">Pustike Maven Parent</a>
                 <a class="navbar-item" href="/projects/website">Website using Hugo</a>
               </div>
@@ -53,34 +50,23 @@
         </div>
       </div>
     </nav>
-    <div class="is-margin-8">
+    <div class="mx-2 my-2">
       <div class="container">
 
 <div>
   <div class="content has-text-justified">
-    
-
-<h2 id="pustike-json">Pustike JSON</h2>
-
-<p><a href="https://github.com/pustike/pustike-json">Pustike JSON</a> library provides an <code>ObjectMapper</code> class that can create Java objects from JSON or create JSON value from Java objects, by using <a href="https://github.com/eclipse-ee4j/jsonp/">Jakarta JSON-P</a> APIs internally. And it also integrates with <a href="https://github.com/jwtk/jjwt/">Java JWT</a> library by providing implementations for <code>Serializer</code>, <code>Deserializer</code> services.</p>
-
-<p>The key feature of this object mapper is it&rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required. But when editing the the same customer object, many additional properties are needed which can be defined in another context. This helps in reducing the transferred data size when communicating with JSON objects in the API.</p>
-
+    <h2 id="pustike-json">Pustike JSON</h2>
+<p><a href="https://github.com/pustike/pustike-json">Pustike JSON</a> library provides an <code>ObjectMapper</code> class that can create Java objects from JSON or create JSON value from Java objects, by using <a href="https://github.com/eclipse-ee4j/jsonp/">Jakarta JSON-P</a> APIs internally.</p>
+<p>The key feature of this object mapper is its ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required. But when editing the same customer object, many additional properties are needed which can be defined in another context. This helps in reducing the transferred data size when communicating with JSON objects in the API.</p>
 <p>Following are some of its features:</p>
-
 <ul>
 <li>Read JSON text and convert it to the given type.</li>
 <li>Convert an object to <code>JsonValue</code>, optionally in the given context to include listed fields only.</li>
 <li><code>@JsonIncludes</code> allows multiple contexts to be defined on a class with each of them listing fields to be included in JSON format.</li>
 <li>A <code>TypeConverter</code> utility class to convert objects between given source and target types.</li>
-<li>JWT <code>Serializer</code> implementation using the Object Mapper with JSON-P.</li>
-<li>JWT <code>Deserializer</code> implementation using the Object Mapper with JSON-P.</li>
 </ul>
-
 <p><strong>Dependencies</strong></p>
-
 <p>This library requires Java 11 and following modules:</p>
-
 <table>
 <thead>
 <tr>
@@ -89,51 +75,30 @@
 <th>Version</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>jakarta.json</td>
 <td>jakarta.json-api</td>
-<td>1.1.5</td>
+<td>2.0.0</td>
 </tr>
-
 <tr>
 <td>org.glassfish</td>
 <td>jakarta.json</td>
-<td>1.1.5</td>
-</tr>
-
-<tr>
-<td>io.jsonwebtoken</td>
-<td>jjwt-api</td>
-<td>0.10.8*</td>
-</tr>
-
-<tr>
-<td>io.jsonwebtoken</td>
-<td>jjwt-impl</td>
-<td>0.10.8*</td>
+<td>2.0.0</td>
 </tr>
 </tbody>
 </table>
-
 <p><strong>Documentation:</strong> Latest javadocs is available <a href="https://javadoc.io/doc/io.github.pustike/pustike-json">here</a>.</p>
-
 <p><strong>Download:</strong></p>
-
+<p>The most recent release is v0.2.0 (2021-01-25), and it is available from Maven central repository.</p>
 <p>To add it as a dependency in Maven builds, use the following:</p>
-
-<pre><code class="language-xml">&lt;dependency&gt;
-    &lt;groupId&gt;io.github.pustike&lt;/groupId&gt;
-    &lt;artifactId&gt;pustike-json&lt;/artifactId&gt;
-    &lt;version&gt;0.1.0&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre>
-
-<p>Or, download the latest JAR(~25kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-json&amp;v=LATEST">Maven Central</a>.</p>
-
-<p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json/badge.svg" alt="" /></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-json"><img src="https://javadoc.io/badge/io.github.pustike/pustike-json.svg" alt="" /></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt="" /></a></p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-json<span style="color:#f92672">&lt;/artifactId&gt;</span>
+    <span style="color:#f92672">&lt;version&gt;</span>0.2.0<span style="color:#f92672">&lt;/version&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+</code></pre></div><p>Or, download the latest JAR(~25kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-json&amp;v=LATEST">Maven Central</a>.</p>
+<p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json/badge.svg" alt=""></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-json"><img src="https://javadoc.io/badge/io.github.pustike/pustike-json.svg" alt=""></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt=""></a></p>
 <p><strong>License:</strong>
 This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>
 
@@ -156,7 +121,7 @@ This library is published under the <a href="https://www.apache.org/licenses/LIC
             <span class="icon is-small has-text-danger"><i class="fas fa-rss"></i></span>
           </a>
         </p>
-        <p class="has-text-centered">Copyright 2016-2019 &copy; Prashant Bhat.<br/>
+        <p class="has-text-centered">Copyright 2016-2021 &copy; Prashant Bhat.<br/>
           The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" >CC BY NC SA 4.0</a>.
         </p>
         <br/>

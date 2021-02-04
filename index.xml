@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Prashant Bhat&#39;s Website</title>
@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing Pustike Event Bus</title>
       <link>/blog/introducing-pustike-eventbus/</link>
@@ -36,38 +32,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I&amp;rsquo;m a Java Software Architect, based in Singapore, building Financial and Supply Chain Management systems. I&amp;rsquo;m currently developing a web application, with multi-tenant architecture, for small/medium business users to maintain their accounting data.
+      <description>I&amp;rsquo;m a Java Software Architect, based in Singapore, with experience in building Financial and Supply Chain Management systems. I&amp;rsquo;m currently developing a web application, with multi-tenant architecture, for small/medium business users to maintain their accounting data.
 Work Experience:
- ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team. Created desktop application in Java with client-server communication and rich client based user interface. Implemented the ERP solution in 8 different countries and supported updates to manage growing business needs / process changes.</description>
-    </item>
-    
-    <item>
-      <title>Commons CSV</title>
-      <link>/projects/commons-csv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/commons-csv/</guid>
-      <description>Apache Commons CSV This library is a fork of the Apache Commons CSV. The source code is published as a GitHub Project under Apache License.
-Additionally, it has following changes:
- Added module-info.java and requires Java 11. Replace Assertions.notNull() usage with Objects.requireNonNull() Remove dependency on java.sql module and remove unnecessary boxing  Documentation:
-Latest API docs are accessible here.
-Download:
-To add it as a dependency in Maven builds, use the following:</description>
-    </item>
-    
-    <item>
-      <title>Javax Inject</title>
-      <link>/projects/javax.inject/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/javax.inject/</guid>
-      <description>Java Inject API This library is a fork of the JSR-330 specification. The source code is published as a GitHub Project under Apache License.
-Additionally, it has following changes:
- Added module-info.java and requires Java 11. Fixed HTML 5 errors in javadocs  Documentation:
-Latest API docs are accessible here.
-Download:
-To add it as a dependency in Maven builds, use the following:
-&amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;javax.inject&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;1.1.0&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt;  Or, download the latest-jar from Maven central repository.</description>
+ ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team. Created desktop application in Java with client-server communication and rich client based user interface.</description>
     </item>
     
     <item>
@@ -77,7 +44,7 @@ To add it as a dependency in Maven builds, use the following:
       
       <guid>/projects/pustike-eventbus/</guid>
       <description>Pustike EventBus Pustike EventBus is a fork of Guava EventBus, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.
-EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur.</description>
+EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur. And some publish events on the bus.</description>
     </item>
     
     <item>
@@ -86,7 +53,7 @@ EventBus is a library providing publisher/subscriber pattern for loose coupling 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-inject/</guid>
-      <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the JSR-330 specification.
+      <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the Jakarta Injection API specification.
 Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).</description>
     </item>
     
@@ -96,8 +63,8 @@ Injector is the core part of this library and it tracks dependencies for types c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/pustike-json/</guid>
-      <description>Pustike JSON Pustike JSON library provides an ObjectMapper class that can create Java objects from JSON or create JSON value from Java objects, by using Jakarta JSON-P APIs internally. And it also integrates with Java JWT library by providing implementations for Serializer, Deserializer services.
-The key feature of this object mapper is it&amp;rsquo;s ability to generate JSON values with only specified list of fields/properties of an object depending on the given context.</description>
+      <description>Pustike JSON Pustike JSON library provides an ObjectMapper class that can create Java objects from JSON or create JSON value from Java objects, by using Jakarta JSON-P APIs internally.
+The key feature of this object mapper is its ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required.</description>
     </item>
     
     <item>
@@ -110,7 +77,7 @@ The key feature of this object mapper is it&amp;rsquo;s ability to generate JSON
  
 Usage:
 Include it in the parent section of pom.xml, as shown here:
-&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.3&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt;  Properties:
+&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.4&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt; Properties:
  Project&amp;rsquo;s source encoding is set to: UTF-8 maven.compiler.release property is set to Java version: 11  Dependencies:
 Test dependencies for JUnit 5 are included.
    Group Id Artifact Id Version     org.</description>
