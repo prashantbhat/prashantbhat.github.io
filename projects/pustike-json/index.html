@@ -56,7 +56,7 @@
 <div>
   <div class="content has-text-justified">
     <h2 id="pustike-json">Pustike JSON</h2>
-<p><a href="https://github.com/pustike/pustike-json">Pustike JSON</a> library provides an <code>ObjectMapper</code> class that can create Java objects from JSON or create JSON value from Java objects, by using <a href="https://github.com/eclipse-ee4j/jsonp/">Jakarta JSON-P</a> APIs internally.</p>
+<p><a href="https://github.com/pustike/pustike-json">Pustike JSON</a> library provides an <code>ObjectMapper</code> class that can create Java objects from JSON or create JSON value from Java objects, by using <a href="https://github.com/jakartaee/jsonp-api">Jakarta JSON-P</a> APIs internally.</p>
 <p>The key feature of this object mapper is its ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required. But when editing the same customer object, many additional properties are needed which can be defined in another context. This helps in reducing the transferred data size when communicating with JSON objects in the API.</p>
 <p>Following are some of its features:</p>
 <ul>
@@ -66,38 +66,33 @@
 <li>A <code>TypeConverter</code> utility class to convert objects between given source and target types.</li>
 </ul>
 <p><strong>Dependencies</strong></p>
-<p>This library requires Java 11 and following modules:</p>
+<p>This library requires Java 17 and following modules:</p>
 <table>
-<thead>
-<tr>
-<th>Group Id</th>
-<th>Artifact Id</th>
-<th>Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>jakarta.json</td>
-<td>jakarta.json-api</td>
-<td>2.0.0</td>
-</tr>
-<tr>
-<td>org.glassfish</td>
-<td>jakarta.json</td>
-<td>2.0.0</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Group Id</th>
+          <th>Artifact Id</th>
+          <th>Version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>jakarta.json</td>
+          <td>jakarta.json-api</td>
+          <td>2.1.2</td>
+      </tr>
+  </tbody>
 </table>
 <p><strong>Documentation:</strong> Latest javadocs is available <a href="https://javadoc.io/doc/io.github.pustike/pustike-json">here</a>.</p>
 <p><strong>Download:</strong></p>
-<p>The most recent release is v0.2.0 (2021-01-25), and it is available from Maven central repository.</p>
+<p>The most recent release is v0.3.0 (2023-08-16), and it is available from Maven central repository.</p>
 <p>To add it as a dependency in Maven builds, use the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
-    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
-    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-json<span style="color:#f92672">&lt;/artifactId&gt;</span>
-    <span style="color:#f92672">&lt;version&gt;</span>0.2.0<span style="color:#f92672">&lt;/version&gt;</span>
-<span style="color:#f92672">&lt;/dependency&gt;</span>
-</code></pre></div><p>Or, download the latest JAR(~25kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-json&amp;v=LATEST">Maven Central</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-json<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;version&gt;</span>0.3.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Or, download the latest JAR(~21kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-json&amp;v=LATEST">Maven Central</a>.</p>
 <p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-json/badge.svg" alt=""></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-json"><img src="https://javadoc.io/badge/io.github.pustike/pustike-json.svg" alt=""></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt=""></a></p>
 <p><strong>License:</strong>
 This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>

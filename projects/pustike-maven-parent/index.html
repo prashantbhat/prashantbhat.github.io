@@ -60,94 +60,94 @@
 <p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent/badge.svg" alt=""></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt=""></a></p>
 <p><strong>Usage:</strong></p>
 <p>Include it in the parent section of pom.xml, as shown here:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;parent&gt;</span>
-    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
-    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-maven-parent<span style="color:#f92672">&lt;/artifactId&gt;</span>
-    <span style="color:#f92672">&lt;version&gt;</span>0.1.4<span style="color:#f92672">&lt;/version&gt;</span>
-<span style="color:#f92672">&lt;/parent&gt;</span>
-</code></pre></div><p><strong>Properties:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;parent&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-maven-parent<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;version&gt;</span>0.2.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/parent&gt;</span>
+</span></span></code></pre></div><p><strong>Properties:</strong></p>
 <ul>
 <li>Project&rsquo;s source encoding is set to: <code>UTF-8</code></li>
-<li><code>maven.compiler.release</code> property is set to Java version: <code>11</code></li>
+<li><code>maven.compiler.release</code> property is set to Java version: <code>17</code></li>
 </ul>
 <p><strong>Dependencies:</strong></p>
 <p>Test dependencies for <a href="https://junit.org/junit5">JUnit 5</a> are included.</p>
 <table>
-<thead>
-<tr>
-<th>Group Id</th>
-<th>Artifact Id</th>
-<th>Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>org.junit.jupiter</td>
-<td>junit-jupiter-api</td>
-<td>5.7.0</td>
-</tr>
-<tr>
-<td>org.junit.jupiter</td>
-<td>junit-jupiter-engine</td>
-<td>5.7.0</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Group Id</th>
+          <th>Artifact Id</th>
+          <th>Version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>org.junit.jupiter</td>
+          <td>junit-jupiter-api</td>
+          <td>5.10.0</td>
+      </tr>
+      <tr>
+          <td>org.junit.jupiter</td>
+          <td>junit-jupiter-engine</td>
+          <td>5.10.0</td>
+      </tr>
+  </tbody>
 </table>
 <p><strong>Build Plugins:</strong></p>
 <p>Following maven build plugins are defined from the groupId: <code>org.apache.maven.plugins</code></p>
 <table>
-<thead>
-<tr>
-<th>Artifact Id</th>
-<th>Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>maven-clean-plugin</td>
-<td>3.1.0</td>
-</tr>
-<tr>
-<td>maven-resources-plugin</td>
-<td>3.2.0</td>
-</tr>
-<tr>
-<td>maven-compiler-plugin</td>
-<td>3.8.1</td>
-</tr>
-<tr>
-<td>maven-jar-plugin</td>
-<td>3.2.0</td>
-</tr>
-<tr>
-<td>maven-javadoc-plugin</td>
-<td>3.2.0</td>
-</tr>
-<tr>
-<td>maven-surefire-plugin</td>
-<td>3.0.0-M5</td>
-</tr>
-<tr>
-<td>maven-install-plugin</td>
-<td>3.0.0-M1</td>
-</tr>
-<tr>
-<td>maven-deploy-plugin</td>
-<td>3.0.0-M1</td>
-</tr>
-<tr>
-<td>maven-site-plugin</td>
-<td>3.9.1</td>
-</tr>
-<tr>
-<td>maven-source-plugin</td>
-<td>3.2.1</td>
-</tr>
-<tr>
-<td>maven-gpg-plugin</td>
-<td>1.6</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Artifact Id</th>
+          <th>Version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>maven-clean-plugin</td>
+          <td>3.3.1</td>
+      </tr>
+      <tr>
+          <td>maven-resources-plugin</td>
+          <td>3.3.1</td>
+      </tr>
+      <tr>
+          <td>maven-compiler-plugin</td>
+          <td>3.11.0</td>
+      </tr>
+      <tr>
+          <td>maven-jar-plugin</td>
+          <td>3.3.0</td>
+      </tr>
+      <tr>
+          <td>maven-javadoc-plugin</td>
+          <td>3.5.0</td>
+      </tr>
+      <tr>
+          <td>maven-surefire-plugin</td>
+          <td>3.1.2</td>
+      </tr>
+      <tr>
+          <td>maven-install-plugin</td>
+          <td>3.1.1</td>
+      </tr>
+      <tr>
+          <td>maven-deploy-plugin</td>
+          <td>3.1.1</td>
+      </tr>
+      <tr>
+          <td>maven-site-plugin</td>
+          <td>3.12.1</td>
+      </tr>
+      <tr>
+          <td>maven-source-plugin</td>
+          <td>3.3.0</td>
+      </tr>
+      <tr>
+          <td>maven-gpg-plugin</td>
+          <td>3.1.0</td>
+      </tr>
+  </tbody>
 </table>
 <p>Source and GPG plugins are defined only in the <code>release</code> profile.</p>
 <p><strong>Release Profile:</strong></p>

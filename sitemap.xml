@@ -1,88 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/eventbus/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/introducing-pustike-eventbus/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/java/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2016-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/accounting/</loc>
     <lastmod>2016-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/blog/importance-of-accounting/</loc>
     <lastmod>2016-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-eventbus/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-inject/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-json/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-maven-parent/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-persist/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/pustike-web/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/website/</loc>
   </url>
-  
 </urlset>

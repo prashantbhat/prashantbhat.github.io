@@ -4,114 +4,80 @@
     <title>Prashant Bhat&#39;s Website</title>
     <link>/</link>
     <description>Recent content on Prashant Bhat&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing Pustike Event Bus</title>
       <link>/blog/introducing-pustike-eventbus/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
-      
       <guid>/blog/introducing-pustike-eventbus/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-eventbus&#34;&gt;Pustike EventBus&lt;/a&gt; is a fork of &lt;a href=&#34;https://github.com/google/guava/wiki/EventBusExplained&#34;&gt;Guava EventBus&lt;/a&gt;, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Importance of Accounting</title>
       <link>/blog/importance-of-accounting/</link>
       <pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate>
-      
       <guid>/blog/importance-of-accounting/</guid>
       <description>&lt;p&gt;The importance of financial accounting practices is well known and majority of businesses have well established processes to record, summarize and analyze the historical and prospective information. Financial data is not only required to fulfill legal &amp;amp; tax reporting obligations but it also provides an overview of operational performance through management reporting, that helps to make informed business decisions.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>About Me</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/about/</guid>
-      <description>I&amp;rsquo;m a Java Software Architect, based in Singapore, with experience in building Financial and Supply Chain Management systems. I&amp;rsquo;m currently developing a web application, with multi-tenant architecture, for small/medium business users to maintain their accounting data.
-Work Experience:
- ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team. Created desktop application in Java with client-server communication and rich client based user interface.</description>
+      <description>&lt;a class=&#34;is-pulled-right m-2&#34;&gt;&#xA;    &lt;img src=&#34;/images/profile.jpg&#34; width=&#34;200&#34; height=&#34;257&#34;&gt;&#xA;&lt;/a&gt;&#xA;&#xA;&lt;p&gt;I&amp;rsquo;m a Java Software Architect, based in Singapore, with experience in building Financial and Supply Chain Management systems. I&amp;rsquo;m currently developing a web application, with multi-tenant architecture, for small/medium business users to maintain their accounting data.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Work Experience:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ERP Application development from the very start, by designing, developing and maintaining it, together with a very talented team.&lt;/li&gt;&#xA;&lt;li&gt;Created desktop application in Java with client-server communication and rich client based user interface.&lt;/li&gt;&#xA;&lt;li&gt;Implemented the ERP solution in 8 different countries and supported updates to manage growing business needs / process changes.&lt;/li&gt;&#xA;&lt;li&gt;Published few of my libraries as open source projects, which are listed &lt;a href=&#34;/projects&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I also enjoy maintaining personal accounts and doing financial consolidation of my two entities having different functional currencies.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike Event Bus</title>
       <link>/projects/pustike-eventbus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-eventbus/</guid>
-      <description>Pustike EventBus Pustike EventBus is a fork of Guava EventBus, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.
-EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur. And some publish events on the bus.</description>
+      <description>&lt;h2 id=&#34;pustike-eventbus&#34;&gt;Pustike EventBus&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-eventbus&#34;&gt;Pustike EventBus&lt;/a&gt; is a fork of &lt;a href=&#34;https://github.com/google/guava/wiki/EventBusExplained&#34;&gt;Guava EventBus&lt;/a&gt;, which is probably the most commonly known event bus for Java. Most of the documentation here and test cases are from Guava itself.&lt;/p&gt;&#xA;&lt;p&gt;EventBus is a library providing publisher/subscriber pattern for loose coupling between components(event senders and receivers), by sending messages to each other indirectly. Some objects register with the bus to be notified when certain events of interest occur. And some publish events on the bus. The bus notifies each of the registrants when the event is published. So registrant objects and event-source objects need not know about each other directly. Each may join or depart the bus at any time. Thus it enables central communication between components, simplifies the code and removes direct dependencies.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike Inject</title>
       <link>/projects/pustike-inject/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-inject/</guid>
-      <description>Pustike Inject Pustike Inject is a simple dependency injection framework that implements the Jakarta Injection API specification.
-Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).</description>
+      <description>&lt;h2 id=&#34;pustike-inject&#34;&gt;Pustike Inject&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-inject&#34;&gt;Pustike Inject&lt;/a&gt; is a simple dependency injection framework that implements the &lt;a href=&#34;https://github.com/jakartaee/inject&#34;&gt;Jakarta Injection API&lt;/a&gt; specification.&lt;/p&gt;&#xA;&lt;p&gt;Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike JSON</title>
       <link>/projects/pustike-json/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-json/</guid>
-      <description>Pustike JSON Pustike JSON library provides an ObjectMapper class that can create Java objects from JSON or create JSON value from Java objects, by using Jakarta JSON-P APIs internally.
-The key feature of this object mapper is its ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required.</description>
+      <description>&lt;h2 id=&#34;pustike-json&#34;&gt;Pustike JSON&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-json&#34;&gt;Pustike JSON&lt;/a&gt; library provides an &lt;code&gt;ObjectMapper&lt;/code&gt; class that can create Java objects from JSON or create JSON value from Java objects, by using &lt;a href=&#34;https://github.com/jakartaee/jsonp-api&#34;&gt;Jakarta JSON-P&lt;/a&gt; APIs internally.&lt;/p&gt;&#xA;&lt;p&gt;The key feature of this object mapper is its ability to generate JSON values with only specified list of fields/properties of an object depending on the given context. For ex, when a list of customer objects are being shown in a select field, very few properties like code and name are required. But when editing the same customer object, many additional properties are needed which can be defined in another context. This helps in reducing the transferred data size when communicating with JSON objects in the API.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike Maven Parent</title>
       <link>/projects/pustike-maven-parent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-maven-parent/</guid>
-      <description>Pustike Maven Parent This project contains common Maven configuration for Pustike projects and is published as a GitHub Project under Apache License.
- 
-Usage:
-Include it in the parent section of pom.xml, as shown here:
-&amp;lt;parent&amp;gt; &amp;lt;groupId&amp;gt;io.github.pustike&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pustike-maven-parent&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;0.1.4&amp;lt;/version&amp;gt; &amp;lt;/parent&amp;gt; Properties:
- Project&amp;rsquo;s source encoding is set to: UTF-8 maven.compiler.release property is set to Java version: 11  Dependencies:
-Test dependencies for JUnit 5 are included.
-   Group Id Artifact Id Version     org.</description>
+      <description>&lt;h2 id=&#34;pustike-maven-parent&#34;&gt;Pustike Maven Parent&lt;/h2&gt;&#xA;&lt;p&gt;This project contains common &lt;a href=&#34;https://maven.apache.org&#34;&gt;Maven&lt;/a&gt; configuration for Pustike projects and is published as a &lt;a href=&#34;https://github.com/pustike/pustike-maven-parent&#34;&gt;GitHub Project&lt;/a&gt; under Apache License.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent&#34;&gt;&lt;img src=&#34;https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-maven-parent/badge.svg&#34; alt=&#34;&#34;&gt;&lt;/a&gt; &lt;a href=&#34;LICENSE&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/license-Apache%202-blue.svg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Usage:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Include it in the parent section of pom.xml, as shown here:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;parent&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;io.github.pustike&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;pustike-maven-parent&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;0.2.0&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/parent&amp;gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Properties:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project&amp;rsquo;s source encoding is set to: &lt;code&gt;UTF-8&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;maven.compiler.release&lt;/code&gt; property is set to Java version: &lt;code&gt;17&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Dependencies:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Test dependencies for &lt;a href=&#34;https://junit.org/junit5&#34;&gt;JUnit 5&lt;/a&gt; are included.&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Group Id&lt;/th&gt;&#xA;          &lt;th&gt;Artifact Id&lt;/th&gt;&#xA;          &lt;th&gt;Version&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;org.junit.jupiter&lt;/td&gt;&#xA;          &lt;td&gt;junit-jupiter-api&lt;/td&gt;&#xA;          &lt;td&gt;5.10.0&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;org.junit.jupiter&lt;/td&gt;&#xA;          &lt;td&gt;junit-jupiter-engine&lt;/td&gt;&#xA;          &lt;td&gt;5.10.0&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;&lt;strong&gt;Build Plugins:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike Persist</title>
       <link>/projects/pustike-persist/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-persist/</guid>
-      <description>Pustike Persist Pustike Persist is an object based persistence library. Using a simple configuration and annotation based entity mapping, it provides features like schema generation, sql query api to insert / update / delete objects and a fluent data finder api.
-Using Java Persistence API is the standard approach to object persistence in Java based applications. And it is a comprehensive and complex API to implement and use. Using a JPA implementation for persistence can add lot of overhead to small/medium sized applications.</description>
+      <description>&lt;h2 id=&#34;pustike-persist&#34;&gt;Pustike Persist&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/pustike/pustike-persist&#34;&gt;Pustike Persist&lt;/a&gt; is an object based persistence library. Using a simple configuration and annotation based entity mapping, it provides features like schema generation, sql query api to insert / update / delete objects and a fluent data finder api.&lt;/p&gt;&#xA;&lt;p&gt;Using &lt;a href=&#34;https://en.wikipedia.org/wiki/Java_Persistence_API&#34;&gt;Java Persistence API&lt;/a&gt; is the standard approach to object persistence in Java based applications. And it is a comprehensive and complex API to implement and use. Using a JPA implementation for persistence can add lot of overhead to small/medium sized applications. So, Pustike Persist provides a simple api to perform common SQL queries using object metadata built using JPA like annotations.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Pustike Web</title>
       <link>/projects/pustike-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/pustike-web/</guid>
-      <description>Pustike Web Pustike Web provides API for creating application using RESTful Web Services with a central servlet DispatcherServlet, having an API similar to JAX-RS. Applications developed using this library can be deployed in any Servlet container like other web frameworks.
-The WebServletContextListener and a DispatcherServlet need to be declared and mapped according to the Servlet specification by using Java configuration or in web.xml. During servlet context initialization, the dependency injector should be configured using the ServletModule and other application specific modules.</description>
+      <description>&lt;h2 id=&#34;pustike-web&#34;&gt;Pustike Web&lt;/h2&gt;&#xA;&lt;p&gt;Pustike Web provides API for creating application using RESTful Web Services with a central servlet &lt;code&gt;DispatcherServlet&lt;/code&gt;, having an API similar to &lt;a href=&#34;https://github.com/jakartaee/rest&#34;&gt;JAX-RS&lt;/a&gt;. Applications developed using this library can be deployed in any Servlet container like other web frameworks.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;code&gt;WebServletContextListener&lt;/code&gt; and a &lt;code&gt;DispatcherServlet&lt;/code&gt; need to be declared and mapped according to the Servlet specification by using Java configuration or in web.xml. During servlet context initialization, the &lt;a href=&#34;/projects/pustike-inject&#34;&gt;dependency injector&lt;/a&gt; should be configured using the &lt;code&gt;ServletModule&lt;/code&gt; and other application specific modules. Application modules register resource controller classes annotated with &lt;code&gt;@Path&lt;/code&gt; specifying relative path to the context. The &lt;code&gt;DispatcherServlet&lt;/code&gt; delegates incoming client requests, by matching their request path pattern, to the respective controller class which does the actual processing.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Website</title>
       <link>/projects/website/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/projects/website/</guid>
-      <description>Website Based on everyday experience, we gain better understanding of certain concepts and sometimes get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.
-So this website is a central place to record my understandings on topics of interest and also to share with others.</description>
+      <description>&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;&#xA;&lt;p&gt;Based on everyday experience, we gain better understanding of certain concepts and sometimes get new ideas/approaches to address some commonly required use cases. It may be in the field of technology or functioning of a business process or simply any topic of personal interest. But most often these thoughts are lost, if they are not documented on a regular basis or not implemented.&lt;/p&gt;&#xA;&lt;p&gt;So this website is a central place to record my understandings on topics of interest and also to share with others. This also provides an opportunity for me to get feedback and learn from others having better knowledge/experience.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

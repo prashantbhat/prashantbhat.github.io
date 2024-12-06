@@ -56,12 +56,12 @@
 <div>
   <div class="content has-text-justified">
     <h2 id="pustike-web">Pustike Web</h2>
-<p>Pustike Web provides API for creating application using RESTful Web Services with a central servlet <code>DispatcherServlet</code>, having an API similar to <a href="https://github.com/eclipse-ee4j/jaxrs-api">JAX-RS</a>. Applications developed using this library can be deployed in any Servlet container like other web frameworks.</p>
+<p>Pustike Web provides API for creating application using RESTful Web Services with a central servlet <code>DispatcherServlet</code>, having an API similar to <a href="https://github.com/jakartaee/rest">JAX-RS</a>. Applications developed using this library can be deployed in any Servlet container like other web frameworks.</p>
 <p>The <code>WebServletContextListener</code> and a <code>DispatcherServlet</code> need to be declared and mapped according to the Servlet specification by using Java configuration or in web.xml. During servlet context initialization, the <a href="/projects/pustike-inject">dependency injector</a> should be configured using the <code>ServletModule</code> and other application specific modules. Application modules register resource controller classes annotated with <code>@Path</code> specifying relative path to the context. The <code>DispatcherServlet</code> delegates incoming client requests, by matching their request path pattern, to the respective controller class which does the actual processing.</p>
 <p>Controller methods can retrieve data from the servlet request by declaring parameter annotations with respective keys. It also includes the JSON data reader/writer with java object mapping that supports option to use specified fields only, based on requested data context.</p>
 <p>Following are some of its key features:</p>
 <ul>
-<li>RESTful web services using a central servlet <code>DispatcherServlet</code> with an API similar to <a href="https://github.com/eclipse-ee4j/jaxrs-api">JAX-RS</a>.</li>
+<li>RESTful web services using a central servlet <code>DispatcherServlet</code> with an API similar to <a href="https://github.com/jakartaee/rest">JAX-RS</a>.</li>
 <li>Provides resource class or method level annotation <code>@Path</code> to specify the relative path.</li>
 <li>Specify the HTTP request type of a resource using: <code>@GET</code>, <code>@PUT</code>, <code>@POST</code>, <code>@DELETE</code>, <code>@HEAD</code>.</li>
 <li>Specify the accepted request media type using <code>@Consumes</code>.</li>
@@ -71,22 +71,65 @@
 <li>Scopes: <code>RequestScope</code> and <code>SessionScope</code> are made available for binding resource classes when configuring the injector.</li>
 <li>Static resource servlet to serve files or user defined static content.</li>
 <li>Support for JSON - object mapping with option to output selected fields only, based on user defined context.</li>
-<li>Requires Java 11 and it has dependencies to servlet-api and pustike-inject, json libraries.</li>
+<li>Requires Java 17 and it has dependencies to servlet-api and pustike-inject, json libraries.</li>
 </ul>
+<p><strong>Dependencies</strong></p>
+<p>This library requires Java 17 and following modules:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Group Id</th>
+          <th>Artifact Id</th>
+          <th>Version</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>jakarta.inject</td>
+          <td>jakarta.inject-api</td>
+          <td>2.0.0</td>
+      </tr>
+      <tr>
+          <td>io.github.pustike</td>
+          <td>pustike-inject</td>
+          <td>2.0.0</td>
+      </tr>
+      <tr>
+          <td>jakarta.json</td>
+          <td>jakarta.json-api</td>
+          <td>2.1.2</td>
+      </tr>
+      <tr>
+          <td>io.github.pustike</td>
+          <td>pustike-json</td>
+          <td>0.3.0</td>
+      </tr>
+      <tr>
+          <td>jakarta.servlet</td>
+          <td>jakarta.servlet-api</td>
+          <td>6.0.0</td>
+      </tr>
+      <tr>
+          <td>org.eclipse.jetty.ee10</td>
+          <td>jetty-ee10-servlet (optional)</td>
+          <td>12.0.0</td>
+      </tr>
+  </tbody>
+</table>
 <p><strong>Documentation:</strong></p>
 <ul>
 <li>User Guide is included in the project&rsquo;s <a href="https://github.com/pustike/pustike-web">README.md</a> file.</li>
 <li>Latest API docs are accessible <a href="https://javadoc.io/doc/io.github.pustike/pustike-web">here</a>.</li>
 </ul>
 <p><strong>Download:</strong></p>
-<p>The most recent release is v0.8.0 (2021-01-25), and it is available from Maven central repository.</p>
-<p>Download the <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-web&amp;v=LATEST">latest-jar</a> or configure this dependency in Maven build:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
-    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
-    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-web<span style="color:#f92672">&lt;/artifactId&gt;</span>
-    <span style="color:#f92672">&lt;version&gt;</span>0.8.0<span style="color:#f92672">&lt;/version&gt;</span>
-<span style="color:#f92672">&lt;/dependency&gt;</span>
-</code></pre></div><p>Or, download the latest JAR(~60kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-web&amp;v=LATEST">Maven Central</a>.</p>
+<p>The most recent release is v0.9.0 (2023-08-29), and it is available from Maven central repository.</p>
+<p>To add it as a dependency in Maven builds, use the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-web<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;version&gt;</span>0.9.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Or, download the latest JAR(~60kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-web&amp;v=LATEST">Maven Central</a>.</p>
 <p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-web"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-web/badge.svg" alt=""></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-web"><img src="https://javadoc.io/badge/io.github.pustike/pustike-web.svg" alt=""></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt=""></a></p>
 <p><strong>License:</strong>
 This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>

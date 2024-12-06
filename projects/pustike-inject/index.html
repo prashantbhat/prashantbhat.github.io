@@ -56,7 +56,7 @@
 <div>
   <div class="content has-text-justified">
     <h2 id="pustike-inject">Pustike Inject</h2>
-<p><a href="https://github.com/pustike/pustike-inject">Pustike Inject</a> is a simple dependency injection framework that implements the <a href="https://github.com/eclipse-ee4j/injection-api">Jakarta Injection API</a> specification.</p>
+<p><a href="https://github.com/pustike/pustike-inject">Pustike Inject</a> is a simple dependency injection framework that implements the <a href="https://github.com/jakartaee/inject">Jakarta Injection API</a> specification.</p>
 <p>Injector is the core part of this library and it tracks dependencies for types configured by module binders. A module uses the binder to define bindings, which will be used to create an Injector. When an instance of a type or of a binding key is requested, the injector returns the instance by creating it and injecting all its declared dependencies (constructor, fields and methods).</p>
 <p><img src="/images/projects/pustike-inject.png" alt="Pustike Inject"></p>
 <p>Following are some key features of this library:</p>
@@ -70,7 +70,7 @@
 <li>Optional dependencies using <code>@Nullable</code> or <code>Optional&lt;T&gt;</code></li>
 <li>BindingListener: useful for performing further configurations</li>
 <li>Events to allow publish-subscribe style communication between components</li>
-<li>Only ~60kB in size and has dependency on <a href="https://github.com/eclipse-ee4j/injection-api">Jakarta Injection API</a></li>
+<li>Only ~60kB in size and has dependency on <a href="https://github.com/jakartaee/inject">Jakarta Injection API</a></li>
 <li>It requires Java 11 or higher.</li>
 </ul>
 <p><strong>Documentation:</strong></p>
@@ -81,12 +81,12 @@
 <p><strong>Download:</strong></p>
 <p>The most recent release is v2.0.0 (2021-01-25), and it is available from Maven central repository.</p>
 <p>To add it as a dependency in Maven builds, use the following:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
-    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
-    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-inject<span style="color:#f92672">&lt;/artifactId&gt;</span>
-    <span style="color:#f92672">&lt;version&gt;</span>2.0.0<span style="color:#f92672">&lt;/version&gt;</span>
-<span style="color:#f92672">&lt;/dependency&gt;</span>
-</code></pre></div><p>Or, download the latest JAR(~60kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-inject&amp;v=LATEST">Maven Central</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>io.github.pustike<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>pustike-inject<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;version&gt;</span>2.0.0<span style="color:#f92672">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><p>Or, download the latest JAR(~60kB) from <a href="https://search.maven.org/remote_content?g=io.github.pustike&amp;a=pustike-inject&amp;v=LATEST">Maven Central</a>.</p>
 <p><a href="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-inject"><img src="https://maven-badges.herokuapp.com/maven-central/io.github.pustike/pustike-inject/badge.svg" alt=""></a> <a href="https://javadoc.io/doc/io.github.pustike/pustike-inject"><img src="https://javadoc.io/badge/io.github.pustike/pustike-inject.svg" alt=""></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-blue.svg" alt=""></a></p>
 <p><strong>License:</strong>
 This library is published under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a></p>

@@ -4,36 +4,31 @@
     <title>Tags on Prashant Bhat&#39;s Website</title>
     <link>/tags/</link>
     <description>Recent content in Tags on Prashant Bhat&#39;s Website</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>eventbus</title>
+      <title>Eventbus</title>
       <link>/tags/eventbus/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
-      
       <guid>/tags/eventbus/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>java</title>
+      <title>Java</title>
       <link>/tags/java/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 +0000</pubDate>
-      
       <guid>/tags/java/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>accounting</title>
+      <title>Accounting</title>
       <link>/tags/accounting/</link>
       <pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate>
-      
       <guid>/tags/accounting/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
