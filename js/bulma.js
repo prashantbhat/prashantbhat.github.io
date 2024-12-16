@@ -88,7 +88,7 @@ window.addEventListener("DOMContentLoaded", () => {
     setTheme(SYSTEM_THEME);
   }
   // Event listeners
-  const $themeSwitchers = document.querySelectorAll(".js-themes");
+  const $themeSwitchers = document.querySelectorAll(".js-themes .navbar-item");
   $themeSwitchers.forEach((el) => {
     el.addEventListener("click", () => {
       setTheme(el.dataset.scheme);
